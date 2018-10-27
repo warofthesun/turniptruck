@@ -60,9 +60,6 @@ body {}
 	display: none;
 }
 
-.landing-page_header-info {
-	display:block !important;
-}
 /*********************
 LAYOUT & GRID STYLES
 *********************/
@@ -169,7 +166,7 @@ LAYOUT & GRID STYLES
 	background-repeat: no-repeat;
 	max-width: 994px;
 	margin: 0 auto;
-	margin-top: -165px; 
+	margin-top: -165px;
 	position: relative;
 	z-index: 2;
 }
@@ -211,27 +208,6 @@ LAYOUT & GRID STYLES
 HEADER STYLES
 *********************/
 
-.left-header-info {
-	float: left;
-	text-align: left;
-	width: 100%;
-	text-transform:uppercase;
-	font-family: $display-bold;
-	color: $colortwo;
-	font-size: 3.5em;
-	line-height: 1em;
-	padding: 30px 30px 0 30px;
-    position: relative;
-
-	.page_subhead {
-		font-family: $sans-serif;
-		font-size: 15px;
-		line-height: 25px;
-		color: $black;
-		text-transform: none;
-	}
-}
-
 .right-header-info {
 	float: right;
 	border-radius: 100px;
@@ -241,75 +217,6 @@ HEADER STYLES
     margin-top: -25px;
     margin-right: 20px;
     background-image: url('../images/30-days.png');
-}
-
-.landing-page_header-info {
-	top: 20%;
-	height: 420px;
-	width: 634px;
-	background-color: #ffffff;
-	border-radius: 10px;
-	/*
-	background-image: url("../images/placeholder-home-new.png");
-	*/
-	position: relative;
-	background-repeat: no-repeat;
-	margin: 0 auto;
-	text-align: center;
-	background-position-x: 50%;
-
-	.blocks {
-		display: inline-block;
-		width: 191px;
-		height: 191px;
-		overflow: hidden;
-		margin-top: 20px;
-
-		img {
-			width: 191px;
-		}
-
-		.small-caption {
-			font-size: 15px;
-		}
-
-		
-
-		.caption {
-			position: absolute;
-			z-index: 10;
-			width: 191px;
-			padding:0 15px;
-			font-family: $display-bold;
-			font-size: 30px;
-			color: #fec541;
-			text-transform: uppercase;
-			font-weight: bold;
-		    text-shadow:1px 1px 1px black;
-		}
-	}
-
-	.instagram .caption {
-			text-align: left;
-			line-height: 1;
-			bottom: 24px;
-		
-	}
-
-	.lunch .caption {
-			text-align: left;
-			line-height: 1;
-			bottom: 24px;
-			margin-left: -5px;
-		}
-	
-
-	.sale .caption {
-			text-align: right;
-			line-height: 1;
-			padding-top: 10px;
-		
-	}
 }
 
 .header {
@@ -594,7 +501,7 @@ mobile. Make sure to double check these!
 	ul {
 		li {
 			a {
-				&:hover {} 
+				&:hover {}
 			}
 			/*
 			be careful with the depth of your menus.
@@ -605,4 +512,3 @@ mobile. Make sure to double check these!
 		}
 	}
 } /* end .footer-links */
-

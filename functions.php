@@ -76,6 +76,7 @@ if ( ! isset( $content_width ) ) {
 add_image_size( 'custom-thumb-900', 900, 250, true );
 add_image_size( 'custom-thumb-600', 600, 150, true );
 add_image_size( 'custom-thumb-300', 300, 100, true );
+add_image_size( 'landing_blocks', 250, 250, true );
 add_image_size( 'farmer-profile', 178, 220, true );
 add_image_size( 'our-people', 192, 270, true );
 
@@ -118,14 +119,14 @@ new image size.
 
 /************* THEME CUSTOMIZE *********************/
 
-/* 
+/*
   A good tutorial for creating your own Sections, Controls and Settings:
   http://code.tutsplus.com/series/a-guide-to-the-wordpress-theme-customizer--wp-33722
-  
+
   Good articles on modifying the default options:
   http://natko.com/changing-default-wordpress-theme-customization-api-sections/
   http://code.tutsplus.com/tutorials/digging-into-the-theme-customizer-components--wp-27162
-  
+
   To do:
   - Create a js for the postmessage transport method
   - Create some sanitize functions to sanitize inputs
@@ -135,7 +136,7 @@ new image size.
 function bones_theme_customizer($wp_customize) {
   // $wp_customize calls go here.
   //
-  // Uncomment the below lines to remove the default customize sections 
+  // Uncomment the below lines to remove the default customize sections
 
   // $wp_customize->remove_section('title_tagline');
   // $wp_customize->remove_section('colors');
@@ -145,7 +146,7 @@ function bones_theme_customizer($wp_customize) {
 
   // Uncomment the below lines to remove the default controls
   // $wp_customize->remove_control('blogdescription');
-  
+
   // Uncomment the following to change the default section titles
   // $wp_customize->get_section('colors')->title = __( 'Theme Colors' );
   // $wp_customize->get_section('background_image')->title = __( 'Images' );
@@ -200,17 +201,17 @@ add_filter('tribe_venue_label_singular', 'change_single_venue_label' );
 function change_single_venue_label() {
     return 'Store';
 }
-  
+
 add_filter('tribe_venue_label_plural', 'change_plural_venue_label' );
 function change_plural_venue_label() {
     return 'Stores';
 }
-  
+
 add_filter('tribe_organizer_label_singular', 'change_single_organizer_label' );
 function change_single_organizer_label() {
     return 'Facilitator';
 }
-  
+
 add_filter('tribe_organizer_label_plural', 'change_plural_organizer_label' );
 function change_plural_organizer_label() {
     return 'Facilitators';
