@@ -1,0 +1,35 @@
+/******************************************************************
+Site Name:
+Author:
+
+Stylesheet: Desktop Stylsheet
+
+This is the desktop size. It's larger than an iPad so it will only
+be seen on the Desktop.
+
+******************************************************************/
+
+.wrap {
+  width: 1040px;
+}
+
+.header-wrap {
+  width: 1040px;
+  margin: 0 auto;
+}
+
+#sidebar1 {
+	display:block;
+	max-width:23%;
+}
+
+.content-group {
+	background-image: url('../images/page-shadow.png');
+	background-position-y: 20px;
+	background-repeat: no-repeat;
+	max-width: 994px;
+	margin: 0 auto;
+	margin-top: -165px; 
+	position: relative;
+	z-index: 2;
+}

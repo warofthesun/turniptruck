@@ -1,0 +1,608 @@
+/******************************************************************
+Site Name:
+Author:
+
+Stylesheet: Tablet & Small Desktop Stylesheet
+
+Here's where you can start getting into the good stuff.
+This size will work on iPads, other tablets, and desktops.
+So you can start working with more styles, background images,
+and other resources. You'll also notice the grid starts to
+come into play. Have fun!
+
+******************************************************************/
+
+
+/*********************
+GENERAL STYLES
+*********************/
+
+body {}
+
+.woodgrain {
+	background-image: url('../images/wood-stripe.jpg');
+	background-position: center;
+	background-repeat: repeat-x;
+	height: 42px;
+	position: relative;
+	width: 100%;
+	z-index: 1;
+	box-shadow: 1px 2px 4px 1px rgba(0,0,0,0.5);
+
+	.social-icons {
+		text-align: right;
+		margin: 0 auto;
+		font-size: 2em;
+		display: block;
+
+		a, a:visited {
+			color:$white;
+			text-decoration: none;
+			opacity: 1;
+		}
+
+		a:hover {
+			opacity: 0.7;
+		}
+
+		a:active {
+			opacity: 0.9;
+			font-size: 0.9em;
+		}
+	}
+}
+
+.mobile_hide {
+	display: inline-block;
+}
+
+.mobile_show {
+	display: none;
+}
+
+.landing-page_header-info {
+	display:block !important;
+}
+/*********************
+LAYOUT & GRID STYLES
+*********************/
+
+.our-people-container {
+	margin: 0 auto;
+  	max-width: 896px;
+  	margin-right: -2px;
+}
+
+.emodal.medium {
+	max-width: 845px;
+}
+
+.wrap {
+	width: 760px;
+}
+
+.landing-page {
+	height: 615px;
+}
+
+.page-header {
+
+	.page-title {
+		font-size: 4em;
+	}
+}
+
+#section-one {
+	max-width: 1280px;
+	background-image: url('../images/mascot.png');
+	min-height: 520px;
+	background-position-y: 45px;
+	background-repeat: no-repeat;
+	margin:0 auto;
+
+	.mascot {
+		display: none;
+	}
+
+	.main-content {
+		max-width: 900px;
+		padding-right: 450px;
+		margin: auto;
+	}
+}
+
+#section-three {
+	min-height: 450px;
+
+	.section-three-columns {
+		max-width: 975px;
+		text-align: center;
+		margin: 0 auto;
+	}
+
+	.column-one, .column-two {
+		padding-right: 20px;
+	}
+
+	.column-one, .column-two, .column-three {
+		float: left;
+		text-align: left;
+		width: 33%;
+
+	}
+}
+
+#section-four {
+	padding-top: 25px;
+
+	.founder_headshot img {
+		float: left;
+		margin-right: 20px;
+	}
+
+	.founder_title_mobile {
+		display: none;
+	}
+
+	.founder_title {
+		display: inline-block;
+		font-size: 2.3em;
+	}
+}
+
+#inner-content {
+	max-width: 915px;
+	margin: 0 auto;
+
+}
+
+#content {
+	background-image: url('../images/paper-background.jpg');
+}
+
+#content.front-page {
+	background-image: url('../images/paper-background-none.jpg');
+}
+
+.content-group {
+	background-position-y: 20px;
+	background-repeat: no-repeat;
+	max-width: 994px;
+	margin: 0 auto;
+	margin-top: -165px; 
+	position: relative;
+	z-index: 2;
+}
+
+.store_slider {
+	height:360px;
+	overflow:hidden;
+}
+
+.bottom_border {
+	height: 10px;
+	border-bottom:1px solid $black;
+	max-width: 837px;
+	margin: 0 auto;
+	margin-top: 30px;
+	margin-bottom: 45px;
+}
+
+.additional_image {
+	max-height: 345px;
+  	overflow: hidden;
+}
+
+.our-people-modal-content {
+
+	.content {
+		width: 70%;
+		float: left;
+		padding-bottom: 15px;
+	}
+
+	.contact {
+		float: right;
+	}
+}
+
+
+/*********************
+HEADER STYLES
+*********************/
+
+.left-header-info {
+	float: left;
+	text-align: left;
+	width: 100%;
+	text-transform:uppercase;
+	font-family: $display-bold;
+	color: $colortwo;
+	font-size: 3.5em;
+	line-height: 1em;
+	padding: 30px 30px 0 30px;
+    position: relative;
+
+	.page_subhead {
+		font-family: $sans-serif;
+		font-size: 15px;
+		line-height: 25px;
+		color: $black;
+		text-transform: none;
+	}
+}
+
+.right-header-info {
+	float: right;
+	border-radius: 100px;
+	height: 210px;
+	width: 210px;
+	position: relative;
+    margin-top: -25px;
+    margin-right: 20px;
+    background-image: url('../images/30-days.png');
+}
+
+.landing-page_header-info {
+	top: 20%;
+	height: 420px;
+	width: 634px;
+	background-color: #ffffff;
+	border-radius: 10px;
+	/*
+	background-image: url("../images/placeholder-home-new.png");
+	*/
+	position: relative;
+	background-repeat: no-repeat;
+	margin: 0 auto;
+	text-align: center;
+	background-position-x: 50%;
+
+	.blocks {
+		display: inline-block;
+		width: 191px;
+		height: 191px;
+		overflow: hidden;
+		margin-top: 20px;
+
+		img {
+			width: 191px;
+		}
+
+		.small-caption {
+			font-size: 15px;
+		}
+
+		
+
+		.caption {
+			position: absolute;
+			z-index: 10;
+			width: 191px;
+			padding:0 15px;
+			font-family: $display-bold;
+			font-size: 30px;
+			color: #fec541;
+			text-transform: uppercase;
+			font-weight: bold;
+		    text-shadow:1px 1px 1px black;
+		}
+	}
+
+	.instagram .caption {
+			text-align: left;
+			line-height: 1;
+			bottom: 24px;
+		
+	}
+
+	.lunch .caption {
+			text-align: left;
+			line-height: 1;
+			bottom: 24px;
+			margin-left: -5px;
+		}
+	
+
+	.sale .caption {
+			text-align: right;
+			line-height: 1;
+			padding-top: 10px;
+		
+	}
+}
+
+.header {
+
+	#mobile-menu {
+		display: none;
+	}
+
+	#menu-main-menu {
+		display: inline-block !important;
+		margin-right: -10px;
+	}
+}
+
+.page-header {
+	height: 330px;
+}
+
+	.tt-logo {
+		width: 145px;
+		height: 120px;
+		top: 41px;
+	}
+
+/*********************
+NAVIGATION STYLES
+*********************/
+
+.nav {
+	border: 0;
+	ul {
+		background:$black;
+		margin-top:0;
+	}
+	li {
+		float: left;
+		position: relative;
+		background-color: transparent;
+		margin-right:  0px;
+		padding-left: 0px;
+		margin-top:  0px;
+
+		a {
+			border-bottom: 0;
+
+			/*
+			you can use hover styles here even though this size
+			has the possibility of being a mobile device.
+			*/
+			&:hover, &:focus {
+				color: $white;
+				text-decoration: underline;
+			}
+		}
+
+		&:first-child {}
+		&:last-child {}
+
+		/*
+		plan your menus and drop-downs wisely.
+		*/
+		ul.sub-menu,
+		ul.children {
+			margin-top: 0;
+			border: 1px solid #ccc;
+			border-top: 0;
+			position: absolute;
+			visibility: hidden;
+			z-index: 8999;
+
+			li {
+
+				a {
+					padding-left: 10px;
+					border-right: 0;
+					display: block;
+					width: 180px;
+					border-bottom: 1px solid #ccc;
+
+					&:hover,
+					&:focus {}
+
+					&:link {}
+				}
+
+				&:first-child {}
+
+				&:last-child {
+
+					a {
+						border-bottom: 0;
+					}
+				}
+
+				/*
+				if you need to go deeper, go nuts
+				just remember deeper menus suck
+				for usability. k, bai.
+				*/
+				ul {
+					top:0;
+					left:100%;
+				}
+			}
+
+			/* highlight sub-menu current page */
+			li.current-menu-item,
+			li.current_page_item,
+			li.current_page_ancestor {
+				a {}
+			}
+		}
+
+		/* showing sub-menus */
+		&:hover > ul {
+			top: auto;
+			visibility:visible;
+		}
+
+	} /* end .menu ul li */
+
+	/* highlight current page */
+	li.current-menu-item,
+	li.current_page_item,
+	li.current_page_ancestor {
+		a {}
+	}  /* end current highlighters */
+
+} /* end .nav */
+
+/*********************
+SIDEBARS & ASIDES
+*********************/
+
+.sidebar {
+	margin-top: 2.2em;
+}
+
+	.widgettitle {
+		border-bottom: 2px solid #444;
+		margin-bottom: 0.75em;
+	}
+
+	.widget {
+		padding: 0 10px;
+		margin: 2.2em 0;
+
+		ul {
+			li {
+				margin-bottom: 0.75em;
+
+				&:first-child {}
+				&:last-child {}
+				a {}
+				/* deep nesting */
+
+				ul {
+					margin-top: 0.75em;
+					padding-left: 1em;
+				}
+			}
+		}
+	}
+
+
+	/* links widget */
+	.widget_links {}
+	.widget_links ul {}
+	.widget_links ul li {}
+	.widget_links ul li a {}
+
+	/* meta widget */
+	.widget_meta {}
+	.widget_meta ul {}
+	.widget_meta ul li {}
+	.widget_meta ul li a {}
+
+	/* pages widget */
+	.widget_pages {}
+	.widget_pages ul {}
+	.widget_pages ul li {}
+	.widget_pages ul li a {}
+
+	/* recent-posts widget */
+	.widget_recent_entries {}
+	.widget_recent_entries ul {}
+	.widget_recent_entries ul li {}
+	.widget_recent_entries ul li a {}
+
+	/* archives widget */
+	.widget_archive {}
+	.widget_archive ul {}
+	.widget_archive ul li {}
+	.widget_archive ul li a {}
+	.widget_archive select {}
+	.widget_archive option {}
+
+	/* tag-cloud widget */
+	.widget_links {}
+	.widget_links li:after {}
+	.widget_links li:before {}
+	.widget_tag_cloud {}
+	.widget_tag_cloud a {}
+	.widget_tag_cloud a:after {}
+	.widget_tag_cloud a:before {}
+
+	/* calendar widget */
+	.widget_calendar {}
+	#calendar_wrap {}
+	#calendar_wrap th {}
+	#calendar_wrap td {}
+	#wp-calendar tr td {}
+	#wp-calendar caption {}
+	#wp-calendar a {}
+	#wp-calendar #today {}
+	#wp-calendar #prev {}
+	#wp-calendar #next {}
+	#wp-calendar #next a {}
+	#wp-calendar #prev a {}
+
+	/* category widget */
+	.widget_categories {}
+	.widget_categories ul {}
+	.widget_categories ul li {}
+	.widget_categories ul ul.children {}
+	.widget_categories a {}
+	.widget_categories select{}
+	.widget_categories select#cat {}
+	.widget_categories select.postform {}
+	.widget_categories option {}
+	.widget_categories .level-0 {}
+	.widget_categories .level-1 {}
+	.widget_categories .level-2 {}
+	.widget_categories .level-3 {}
+
+	/* recent-comments widget */
+	.recentcomments {}
+	#recentcomments {}
+	#recentcomments li {}
+	#recentcomments li a {}
+	.widget_recent_comments {}
+
+	/* search widget */
+	#searchform {}
+	.widget_search {}
+	.screen-reader-text {}
+
+	/* text widget */
+	.textwidget {}
+	.widget_text {}
+	.textwidget p {}
+
+
+/*********************
+FOOTER STYLES
+*********************/
+
+/*
+you'll probably need to do quite a bit
+of overriding here if you styled them for
+mobile. Make sure to double check these!
+*/
+
+#inner-footer {
+	.social-icons {
+		float: right;
+		clear: right;
+		margin-top: 0px;
+	}
+}
+
+
+.footer-info {
+	float: left;
+	text-align: left !important;
+	margin-top: -41px;
+}
+
+.footer-links {
+	float: right;
+	display: inline-block;
+	ul {
+		li {
+			a {
+				&:hover {} 
+			}
+			/*
+			be careful with the depth of your menus.
+			it's very rare to have multi-depth menus in
+			the footer.
+			*/
+			ul {}
+		}
+	}
+} /* end .footer-links */
+
