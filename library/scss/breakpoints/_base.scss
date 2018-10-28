@@ -346,6 +346,10 @@ HEADER STYLES
 
 	.main-content {
 		padding: 0 30px;
+
+		p {
+			hyphens: none;
+		}
 	}
 
 	strong {
@@ -356,13 +360,13 @@ HEADER STYLES
 	}
 
 	.mascot {
-		background-image: url('../images/mascot.png');
+		background-image: url('../images/farmer-color.png');
 		height: 250px;
 		background-repeat: no-repeat;
 		width: auto;
-		background-size: cover;
+		background-size: 570px;
 		background-position: center;
-		margin-left: -40px;
+		background-position-y: -60px;
 	}
 }
 
@@ -392,7 +396,6 @@ HEADER STYLES
 		font-weight: bold;
 		font-size: 23px;
 		color: $white;
-		border-top: 1px solid $white;
 		padding: 10px 30px;
 		margin-top: 2px;
 		line-height: 2em;
@@ -433,7 +436,9 @@ HEADER STYLES
 		padding: 0 20px;
 		text-align: center;
 		color: $white;
-		border-top: 1px solid $white;
+		border-bottom: 1px solid $white;
+		display: flex;
+		flex-wrap: wrap;
 
 		strong {
 			color: $colorfive;

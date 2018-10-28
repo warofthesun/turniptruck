@@ -349,15 +349,17 @@ LAYOUT & GRID STYLES
 
 #section-one {
   max-width: 1280px;
-  background-image: url("../images/mascot.png");
+  background-image: url("../images/farmer-color.png");
   min-height: 520px;
   background-position-y: 45px;
   background-repeat: no-repeat;
-  margin: 0 auto; }
+  margin: 0 auto;
+  background-size: 870px;
+  background-position-x: 230px; }
   #section-one .mascot {
     display: none; }
   #section-one .main-content {
-    max-width: 900px;
+    max-width: 960px;
     padding-right: 450px;
     margin: auto; }
 
