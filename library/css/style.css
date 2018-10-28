@@ -1268,11 +1268,84 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
-.mobile_hide, .landing-page_header-info {
+.mobile_hide {
   display: none; }
 
 .mobile_show {
   display: inline-block; }
+
+.landing-page_header-info {
+  top: 10%;
+  width: 534px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  position: relative;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  text-align: center;
+  background-position-x: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 1em; }
+  .landing-page_header-info .left-header-info {
+    float: left;
+    text-align: left;
+    width: 100%;
+    text-transform: uppercase;
+    font-family: "adlib_btregular", "Arial Black";
+    color: #DB5526;
+    font-size: 3em;
+    line-height: 1em;
+    padding-bottom: .2em;
+    position: relative; }
+    .landing-page_header-info .left-header-info .page_subhead {
+      font-family: "Open Sans", Verdana, Helvetica, Arial, sans-serif;
+      font-size: 15px;
+      line-height: 25px;
+      color: #323944;
+      text-transform: none; }
+  .landing-page_header-info .blocks {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 48%;
+    height: 241px;
+    overflow: hidden;
+    margin-top: 20px;
+    position: relative; }
+    .landing-page_header-info .blocks img {
+      width: 100%;
+      height: auto; }
+    .landing-page_header-info .blocks .small-caption {
+      font-size: 15px; }
+    .landing-page_header-info .blocks .caption {
+      position: absolute;
+      z-index: 10;
+      width: 100%;
+      padding: 0 15px;
+      font-family: "adlib_btregular", "Arial Black";
+      font-size: 30px;
+      color: #fec541;
+      text-transform: uppercase;
+      font-weight: bold;
+      text-shadow: 1px 1px 1px black; }
+  .landing-page_header-info .top .caption {
+    text-align: right;
+    line-height: 1;
+    top: 24px; }
+  .landing-page_header-info .bottom .caption {
+    text-align: left;
+    line-height: 1;
+    bottom: 24px; }
 
 /********
 Calendar
@@ -1293,7 +1366,7 @@ a.tribe-events-gcal .tribe-events-button {
 
 /*
 #tribe-events-content a,#tribe-events-content a:visited, .tribe-events-adv-list-widget .tribe-events-widget-link a, .tribe-events-adv-list-widget .tribe-events-widget-link a:hover, .tribe-events-back a, .tribe-events-back a:hover, .tribe-events-event-meta a, .tribe-events-list-widget .tribe-events-widget-link a, .tribe-events-list-widget .tribe-events-widget-link a:hover, ul.tribe-events-sub-nav a, ul.tribe-events-sub-nav a:hover {
-	
+
 		color: $colortwo;
 }
 */
@@ -1444,9 +1517,6 @@ HEADER STYLES
   z-index: 9999;
   margin-left: -10px; }
 
-.landing-page_header-info .blocks {
-  display: none; }
-
 #section-one, #section-two, #section-three, #section-four {
   position: relative;
   width: 100%;
@@ -1456,19 +1526,23 @@ HEADER STYLES
   background-color: #ffffff; }
   #section-one .main-content {
     padding: 0 30px; }
+    #section-one .main-content p {
+      -webkit-hyphens: none;
+          -ms-hyphens: none;
+              hyphens: none; }
   #section-one strong {
     font-family: Oswald;
     color: #E39525;
     font-size: 1.5em;
     font-weight: bold; }
   #section-one .mascot {
-    background-image: url("../images/mascot.png");
+    background-image: url("../images/farmer-color.png");
     height: 250px;
     background-repeat: no-repeat;
     width: auto;
-    background-size: cover;
+    background-size: 570px;
     background-position: center;
-    margin-left: -40px; }
+    background-position-y: -60px; }
 
 #section-two .h2, #section-two h2, #section-three .h2, #section-three h2 {
   margin: auto;
@@ -1491,7 +1565,6 @@ HEADER STYLES
     font-weight: bold;
     font-size: 23px;
     color: #fff;
-    border-top: 1px solid #fff;
     padding: 10px 30px;
     margin-top: 2px;
     line-height: 2em;
@@ -1521,7 +1594,12 @@ HEADER STYLES
     padding: 0 20px;
     text-align: center;
     color: #fff;
-    border-top: 1px solid #fff; }
+    border-bottom: 1px solid #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
     #section-three .section-three-columns strong {
       color: #FFC72F;
       font-family: Oswald;
@@ -2380,8 +2458,6 @@ GENERAL STYLES
     display: inline-block; }
   .mobile_show {
     display: none; }
-  .landing-page_header-info {
-    display: block !important; }
   /*********************
 LAYOUT & GRID STYLES
 *********************/
@@ -2399,15 +2475,17 @@ LAYOUT & GRID STYLES
     font-size: 4em; }
   #section-one {
     max-width: 1280px;
-    background-image: url("../images/mascot.png");
+    background-image: url("../images/farmer-color.png");
     min-height: 520px;
     background-position-y: 45px;
     background-repeat: no-repeat;
-    margin: 0 auto; }
+    margin: 0 auto;
+    background-size: 870px;
+    background-position-x: 230px; }
     #section-one .mascot {
       display: none; }
     #section-one .main-content {
-      max-width: 900px;
+      max-width: 960px;
       padding-right: 450px;
       margin: auto; }
   #section-three {
@@ -2469,23 +2547,6 @@ LAYOUT & GRID STYLES
   /*********************
 HEADER STYLES
 *********************/
-  .left-header-info {
-    float: left;
-    text-align: left;
-    width: 100%;
-    text-transform: uppercase;
-    font-family: "adlib_btregular", "Arial Black";
-    color: #DB5526;
-    font-size: 3.5em;
-    line-height: 1em;
-    padding: 30px 30px 0 30px;
-    position: relative; }
-    .left-header-info .page_subhead {
-      font-family: "Open Sans", Verdana, Helvetica, Arial, sans-serif;
-      font-size: 15px;
-      line-height: 25px;
-      color: #323944;
-      text-transform: none; }
   .right-header-info {
     float: right;
     border-radius: 100px;
@@ -2495,54 +2556,6 @@ HEADER STYLES
     margin-top: -25px;
     margin-right: 20px;
     background-image: url("../images/30-days.png"); }
-  .landing-page_header-info {
-    top: 20%;
-    height: 420px;
-    width: 634px;
-    background-color: #ffffff;
-    border-radius: 10px;
-    /*
-	background-image: url("../images/placeholder-home-new.png");
-	*/
-    position: relative;
-    background-repeat: no-repeat;
-    margin: 0 auto;
-    text-align: center;
-    background-position-x: 50%; }
-    .landing-page_header-info .blocks {
-      display: inline-block;
-      width: 191px;
-      height: 191px;
-      overflow: hidden;
-      margin-top: 20px; }
-      .landing-page_header-info .blocks img {
-        width: 191px; }
-      .landing-page_header-info .blocks .small-caption {
-        font-size: 15px; }
-      .landing-page_header-info .blocks .caption {
-        position: absolute;
-        z-index: 10;
-        width: 191px;
-        padding: 0 15px;
-        font-family: "adlib_btregular", "Arial Black";
-        font-size: 30px;
-        color: #fec541;
-        text-transform: uppercase;
-        font-weight: bold;
-        text-shadow: 1px 1px 1px black; }
-    .landing-page_header-info .instagram .caption {
-      text-align: left;
-      line-height: 1;
-      bottom: 24px; }
-    .landing-page_header-info .lunch .caption {
-      text-align: left;
-      line-height: 1;
-      bottom: 24px;
-      margin-left: -5px; }
-    .landing-page_header-info .sale .caption {
-      text-align: right;
-      line-height: 1;
-      padding-top: 10px; }
   .header #mobile-menu {
     display: none; }
   .header #menu-main-menu {

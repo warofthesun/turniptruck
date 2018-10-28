@@ -327,9 +327,6 @@ GENERAL STYLES
 .mobile_show {
   display: none; }
 
-.landing-page_header-info {
-  display: block !important; }
-
 /*********************
 LAYOUT & GRID STYLES
 *********************/
@@ -352,15 +349,17 @@ LAYOUT & GRID STYLES
 
 #section-one {
   max-width: 1280px;
-  background-image: url("../images/mascot.png");
+  background-image: url("../images/farmer-color.png");
   min-height: 520px;
   background-position-y: 45px;
   background-repeat: no-repeat;
-  margin: 0 auto; }
+  margin: 0 auto;
+  background-size: 870px;
+  background-position-x: 230px; }
   #section-one .mascot {
     display: none; }
   #section-one .main-content {
-    max-width: 900px;
+    max-width: 960px;
     padding-right: 450px;
     margin: auto; }
 
@@ -434,24 +433,6 @@ LAYOUT & GRID STYLES
 /*********************
 HEADER STYLES
 *********************/
-.left-header-info {
-  float: left;
-  text-align: left;
-  width: 100%;
-  text-transform: uppercase;
-  font-family: "adlib_btregular", "Arial Black";
-  color: #DB5526;
-  font-size: 3.5em;
-  line-height: 1em;
-  padding: 30px 30px 0 30px;
-  position: relative; }
-  .left-header-info .page_subhead {
-    font-family: "Open Sans", Verdana, Helvetica, Arial, sans-serif;
-    font-size: 15px;
-    line-height: 25px;
-    color: #323944;
-    text-transform: none; }
-
 .right-header-info {
   float: right;
   border-radius: 100px;
@@ -461,55 +442,6 @@ HEADER STYLES
   margin-top: -25px;
   margin-right: 20px;
   background-image: url("../images/30-days.png"); }
-
-.landing-page_header-info {
-  top: 20%;
-  height: 420px;
-  width: 634px;
-  background-color: #ffffff;
-  border-radius: 10px;
-  /*
-	background-image: url("../images/placeholder-home-new.png");
-	*/
-  position: relative;
-  background-repeat: no-repeat;
-  margin: 0 auto;
-  text-align: center;
-  background-position-x: 50%; }
-  .landing-page_header-info .blocks {
-    display: inline-block;
-    width: 191px;
-    height: 191px;
-    overflow: hidden;
-    margin-top: 20px; }
-    .landing-page_header-info .blocks img {
-      width: 191px; }
-    .landing-page_header-info .blocks .small-caption {
-      font-size: 15px; }
-    .landing-page_header-info .blocks .caption {
-      position: absolute;
-      z-index: 10;
-      width: 191px;
-      padding: 0 15px;
-      font-family: "adlib_btregular", "Arial Black";
-      font-size: 30px;
-      color: #fec541;
-      text-transform: uppercase;
-      font-weight: bold;
-      text-shadow: 1px 1px 1px black; }
-  .landing-page_header-info .instagram .caption {
-    text-align: left;
-    line-height: 1;
-    bottom: 24px; }
-  .landing-page_header-info .lunch .caption {
-    text-align: left;
-    line-height: 1;
-    bottom: 24px;
-    margin-left: -5px; }
-  .landing-page_header-info .sale .caption {
-    text-align: right;
-    line-height: 1;
-    padding-top: 10px; }
 
 .header #mobile-menu {
   display: none; }

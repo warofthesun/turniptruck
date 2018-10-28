@@ -20,19 +20,53 @@
 					<div class="page_subhead">
 						<?php the_field('landing_page_content'); ?>
 					</div>
-			</div>
-			<div style="clear:both"></div>
-				<div class="blocks instagram">
+				</div>
+				<a href="/<?php the_field('holiday_special_link'); ?>" class="blocks holiday bottom">
+					<?php
+						$image = get_field('holiday_special');
+
+						// vars
+						$url = $image['url'];
+
+						// thumbnail
+						$size = 'landing_blocks';
+						$thumb = $image['sizes'][ $size ];
+					?>
+					<div class="caption">Holiday<div class="small-caption">Options and Tips</div></div>
+					<img src="<?php echo $thumb; ?>">
+				</a>
+
+				<a href="/<?php the_field('whats_on_sale_link'); ?>" class="blocks top">
+					<?php
+						$image = get_field('whats_on_sale');
+
+						// vars
+						$url = $image['url'];
+
+						// thumbnail
+						$size = 'landing_blocks';
+						$thumb = $image['sizes'][ $size ];
+					?>
+					<div class="caption"><div class="small-caption">What's on</div>Sale?</div>
+					<img src="<?php echo $thumb; ?>">
+				</a>
+				<div class="blocks instagram top">
 					<div class="caption">Our<div class="small-caption">Instagram</div></div>
 					<?php echo do_shortcode ('[instagram-feed]'); ?>
 				</div>
-				<a href="/<?php the_field('whats_on_sale_link'); ?>" class="blocks sale">
-					<div class="caption"><div class="small-caption">What's on</div>Sale?</div>
-					<img src="<?php the_field('whats_on_sale'); ?>">
-				</a>
-				<a href="/<?php the_field('weekly_menu_link'); ?>" class="blocks lunch">
+				<a href="/<?php the_field('weekly_menu_link'); ?>" class="blocks lunch bottom">
+					<?php
+						$image = get_field('weekly_menu');
+
+						// vars
+						$url = $image['url'];
+
+						// thumbnail
+						$size = 'landing_blocks';
+						$thumb = $image['sizes'][ $size ];
+					?>
 					<div class="caption"><div class="small-caption">What's</div>Cooking?</div>
-					<img src="<?php the_field('weekly_menu'); ?>">
+					<img src="<?php echo $thumb; ?>">
 				</a>
 			</div>
 		</div>
