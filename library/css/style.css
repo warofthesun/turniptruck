@@ -146,8 +146,8 @@ em,
  * Address differences between Firefox and other browsers.
  */
 hr {
-  -moz-box-sizing: content-box;
-  box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
   height: 0; }
 
 /*
@@ -156,8 +156,8 @@ hr {
 p {
   -webkit-hyphens: auto;
   -epub-hyphens: auto;
-  -moz-hyphens: auto;
-  hyphens: auto; }
+  -ms-hyphens: auto;
+      hyphens: auto; }
 
 /*
  * Addresses margins set differently in IE6/7.
@@ -356,7 +356,8 @@ html input[disabled] {
  */
 input[type="checkbox"],
 input[type="radio"] {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   /* 1 */
   padding: 0;
   /* 2 */ }
@@ -369,7 +370,6 @@ input[type="radio"] {
 input[type="search"] {
   -webkit-appearance: textfield;
   /* 1 */
-  -moz-box-sizing: content-box;
   -webkit-box-sizing: content-box;
   /* 2 */
   box-sizing: content-box; }
@@ -412,7 +412,6 @@ table {
 
 * {
   -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
 .image-replacement,
@@ -491,12 +490,14 @@ FONT FACE (IN YOUR FACE)
   src: url("../fonts/font_-_truetype_-_ad_lib_bt-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/font_-_truetype_-_ad_lib_bt-webfont.woff2") format("woff2"), url("../fonts/font_-_truetype_-_ad_lib_bt-webfont.woff") format("woff"), url("../fonts/font_-_truetype_-_ad_lib_bt-webfont.ttf") format("truetype"), url("../fonts/font_-_truetype_-_ad_lib_bt-webfont.svg#adlib_btregular") format("svg");
   font-weight: normal;
   font-style: normal; }
+
 @font-face {
   font-family: "starter-set";
   src: url("../fonts/starter-set.eot");
   src: url("../fonts/starter-set.eot?#iefix") format("embedded-opentype"), url("../fonts/starter-set.woff") format("woff"), url("../fonts/starter-set.ttf") format("truetype"), url("../fonts/starter-set.svg#starter-set") format("svg");
   font-weight: normal;
   font-style: normal; }
+
 [data-icon]:before {
   font-family: "starter-set" !important;
   content: attr(data-icon);
@@ -551,13 +552,12 @@ p {
   word-break: break-word;
   word-wrap: break-word;
   -webkit-hyphens: auto;
-  -moz-hyphens: auto;
-  hyphens: auto;
+  -ms-hyphens: auto;
+      hyphens: auto;
   -webkit-hyphenate-before: 2;
   -webkit-hyphenate-after: 3;
   hyphenate-lines: 3;
   -webkit-font-feature-settings: "liga", "dlig";
-  -moz-font-feature-settings: "liga=1, dlig=1";
   -ms-font-feature-settings: "liga", "dlig";
   -o-font-feature-settings: "liga", "dlig";
   font-feature-settings: "liga", "dlig"; }
@@ -690,31 +690,27 @@ them however you see fit.
     padding-right: 0.75em;
     width: 100%;
     padding-right: 0; }
-
   .m-1of2 {
     float: left;
     padding-right: 0.75em;
     width: 50%; }
-
   .m-1of3 {
     float: left;
     padding-right: 0.75em;
     width: 33.33%; }
-
   .m-2of3 {
     float: left;
     padding-right: 0.75em;
     width: 66.66%; }
-
   .m-1of4 {
     float: left;
     padding-right: 0.75em;
     width: 25%; }
-
   .m-3of4 {
     float: left;
     padding-right: 0.75em;
     width: 75%; } }
+
 /* Portrait tablet to landscape */
 @media (min-width: 768px) and (max-width: 1029px) {
   .t-all {
@@ -722,51 +718,43 @@ them however you see fit.
     padding-right: 0.75em;
     width: 100%;
     padding-right: 0; }
-
   .t-1of2 {
     float: left;
     padding-right: 0.75em;
     width: 50%; }
-
   .t-1of3 {
     float: left;
     padding-right: 0.75em;
     width: 33.33%; }
-
   .t-2of3 {
     float: left;
     padding-right: 0.75em;
     width: 66.66%; }
-
   .t-1of4 {
     float: left;
     padding-right: 0.75em;
     width: 25%; }
-
   .t-3of4 {
     float: left;
     padding-right: 0.75em;
     width: 75%; }
-
   .t-1of5 {
     float: left;
     padding-right: 0.75em;
     width: 20%; }
-
   .t-2of5 {
     float: left;
     padding-right: 0.75em;
     width: 40%; }
-
   .t-3of5 {
     float: left;
     padding-right: 0.75em;
     width: 60%; }
-
   .t-4of5 {
     float: left;
     padding-right: 0.75em;
     width: 80%; } }
+
 /* Landscape to small desktop */
 @media (min-width: 1030px) {
   .d-all {
@@ -774,111 +762,91 @@ them however you see fit.
     padding-right: 0.75em;
     width: 100%;
     padding-right: 0; }
-
   .d-1of2 {
     float: left;
     padding-right: 0.75em;
     width: 50%; }
-
   .d-1of3 {
     float: left;
     padding-right: 0.75em;
     width: 33.33%; }
-
   .d-2of3 {
     float: left;
     padding-right: 0.75em;
     width: 66.66%; }
-
   .d-1of4 {
     float: left;
     padding-right: 0.75em;
     width: 25%; }
-
   .d-3of4 {
     float: left;
     padding-right: 0.75em;
     width: 75%; }
-
   .d-1of5 {
     float: left;
     padding-right: 0.75em;
     width: 20%; }
-
   .d-2of5 {
     float: left;
     padding-right: 0.75em;
     width: 40%; }
-
   .d-3of5 {
     float: left;
     padding-right: 0.75em;
     width: 60%; }
-
   .d-4of5 {
     float: left;
     padding-right: 0.75em;
     width: 80%; }
-
   .d-1of6 {
     float: left;
     padding-right: 0.75em;
     width: 16.6666666667%; }
-
   .d-1of7 {
     float: left;
     padding-right: 0.75em;
     width: 14.2857142857%; }
-
   .d-2of7 {
     float: left;
     padding-right: 0.75em;
     width: 28.5714286%; }
-
   .d-3of7 {
     float: left;
     padding-right: 0.75em;
     width: 42.8571429%; }
-
   .d-4of7 {
     float: left;
     padding-right: 0.75em;
     width: 57.1428572%; }
-
   .d-5of7 {
     float: left;
     padding-right: 0.75em;
     width: 71.4285715%; }
-
   .d-6of7 {
     float: left;
     padding-right: 0.75em;
     width: 85.7142857%; }
-
   .d-1of8 {
     float: left;
     padding-right: 0.75em;
     width: 12.5%; }
-
   .d-1of9 {
     float: left;
     padding-right: 0.75em;
     width: 11.1111111111%; }
-
   .d-1of10 {
     float: left;
     padding-right: 0.75em;
     width: 10%; }
-
   .d-1of11 {
     float: left;
     padding-right: 0.75em;
     width: 9.09090909091%; }
-
   .d-1of12 {
     float: left;
     padding-right: 0.75em;
     width: 8.33%; } }
+
 /*********************
 IMPORTING MODULES
 Modules are reusable blocks or elements we use throughout the project.
@@ -1022,7 +990,8 @@ textarea,
   color: #414042;
   border-radius: 3px;
   vertical-align: middle;
-  box-shadow: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
   border: 0;
   width: 100%;
   max-width: 400px;
@@ -1403,10 +1372,10 @@ a, a:visited {
     color: #c17c19; }
   a:link, a:visited:link {
     /*
-    this highlights links on iPhones/iPads.
-    so it basically works like the :hover selector
-    for mobile devices.
-    */
+		this highlights links on iPhones/iPads.
+		so it basically works like the :hover selector
+		for mobile devices.
+		*/
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0.3); }
 
 /******************************************************************
@@ -1417,9 +1386,9 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
   font-weight: 500;
   font-family: "adlib_btregular", "Arial Black";
   /*
-  if you're going to use webfonts, be sure to check your weights
-  http://css-tricks.com/watch-your-font-weight/
-  */
+	if you're going to use webfonts, be sure to check your weights
+	http://css-tricks.com/watch-your-font-weight/
+	*/
   /* removing text decoration from all headline links */ }
   h1 a, .h1 a, h2 a, .h2 a, h3 a, .h3 a, h4 a, .h4 a, h5 a, .h5 a {
     text-decoration: none; }
@@ -1559,12 +1528,9 @@ HEADER STYLES
       font-weight: bold;
       font-size: 2em; }
   #section-three .top-gradient {
-    background-color: transparent;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#bb9e7d), to(transparent));
-    background-image: -webkit-linear-gradient(top, #bb9e7d, transparent);
-    background-image: -moz-linear-gradient(top, #bb9e7d, transparent);
-    background-image: -o-linear-gradient(top, #bb9e7d, transparent);
-    background-image: linear-gradient(to bottom, #bb9e7d, transparent);
+    background-color: rgba(0, 0, 0, 0);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#bb9e7d), to(rgba(0, 0, 0, 0)));
+    background-image: linear-gradient(to bottom, #bb9e7d, rgba(0, 0, 0, 0));
     height: 60px;
     margin-bottom: -50px; }
 
@@ -1668,12 +1634,12 @@ and more scalable.
     padding-left: 60px;
     margin-top: -1px;
     /*
-    so you really have to rethink your dropdowns for mobile.
-    you don't want to have it expand too much because the
-    screen is so small. How you manage your menu should
-    depend on the project. Here's some great info on it:
-    http://www.alistapart.com/articles/organizing-mobile/
-    */ }
+		so you really have to rethink your dropdowns for mobile.
+		you don't want to have it expand too much because the
+		screen is so small. How you manage your menu should
+		depend on the project. Here's some great info on it:
+		http://www.alistapart.com/articles/organizing-mobile/
+		*/ }
     .nav li a {
       display: block;
       color: #fff;
@@ -1684,11 +1650,11 @@ and more scalable.
       font-weight: bold;
       letter-spacing: 1px;
       /*
-      remember this is for mobile ONLY, so there's no need
-      to even declare hover styles here, you can do it in
-      the style.scss file where it's relevant. We want to
-      keep this file as small as possible!
-      */ }
+			remember this is for mobile ONLY, so there's no need
+			to even declare hover styles here, you can do it in
+			the style.scss file where it's relevant. We want to
+			keep this file as small as possible!
+			*/ }
       .nav li a:hover, .nav li a:focus {
         text-decoration: none; }
     .nav li ul.sub-menu li a,
@@ -1729,6 +1695,7 @@ ul.meteor-nav li {
   text-indent: -9999px;
   width: 13px;
   height: 70%;
+  -webkit-transition: all 0 ease 0;
   transition: all 0 ease 0;
   z-index: 998; }
 
@@ -1825,8 +1792,8 @@ POSTS & CONTENT STYLES
 
 .store_slider {
   /*
-  height:260px;
-  */
+	height:260px;
+	*/
   overflow: hidden; }
 
 .store_name {
@@ -1875,7 +1842,8 @@ POSTS & CONTENT STYLES
   max-height: 220px; }
   .farmer_profile img {
     margin: 0;
-    box-shadow: 0px 4px 5px -2px black; }
+    -webkit-box-shadow: 0px 4px 5px -2px black;
+            box-shadow: 0px 4px 5px -2px black; }
 
 a.farm_name {
   font-family: Oswald;
@@ -1925,11 +1893,11 @@ a.farm_name {
   min-height: 400px;
   padding: 1.5em 1.5em 0;
   /*
-  image alignment on a screen this size may be
-  a bit difficult. It's set to start aligning
-  and floating images at the next breakpoint,
-  but it's up to you. Feel free to change it up.
-  */ }
+			image alignment on a screen this size may be
+			a bit difficult. It's set to start aligning
+			and floating images at the next breakpoint,
+			but it's up to you. Feel free to change it up.
+			*/ }
   .entry-content p {
     margin: 0 0 1.5em; }
   .entry-content table {
@@ -2069,6 +2037,7 @@ PAGE NAVI STYLES
 /* fallback previous & next links */
 .wp-prev-next .prev-link {
   float: left; }
+
 .wp-prev-next .next-link {
   float: right; }
 
@@ -2263,14 +2232,14 @@ FOOTER STYLES
       margin: 0 auto; }
 
 /*
-if you checked out the link above:
-http://www.alistapart.com/articles/organizing-mobile/
-you'll want to style the footer nav
-a bit more in-depth. Remember to keep
-it simple because you'll have to
-override these styles for the desktop
-view.
-*/
+	if you checked out the link above:
+	http://www.alistapart.com/articles/organizing-mobile/
+	you'll want to style the footer nav
+	a bit more in-depth. Remember to keep
+	it simple because you'll have to
+	override these styles for the desktop
+	view.
+	*/
 .footer-links {
   display: none; }
 
@@ -2283,30 +2252,30 @@ tweeners.
 *********************/
 @media only screen and (min-width: 481px) {
   /******************************************************************
-  Site Name:
-  Author:
-  
-  Stylesheet: 481px and Up Stylesheet
-  
-  This stylesheet is loaded for larger devices. It's set to
-  481px because at 480px it would load on a landscaped iPhone.
-  This isn't ideal because then you would be loading all those
-  extra styles on that same mobile connection.
-  
-  A word of warning. This size COULD be a larger mobile device,
-  so you still want to keep it pretty light and simply expand
-  upon your base.scss styles.
-  
-  ******************************************************************/
+Site Name:
+Author:
+
+Stylesheet: 481px and Up Stylesheet
+
+This stylesheet is loaded for larger devices. It's set to
+481px because at 480px it would load on a landscaped iPhone.
+This isn't ideal because then you would be loading all those
+extra styles on that same mobile connection.
+
+A word of warning. This size COULD be a larger mobile device,
+so you still want to keep it pretty light and simply expand
+upon your base.scss styles.
+
+******************************************************************/
   /*
-  IMPORTANT NOTE ABOUT SASS 3.3 & UP
-  You can't use @extend within media queries
-  anymore, so just be aware that if you drop
-  them in here, they won't work.
-  */
+IMPORTANT NOTE ABOUT SASS 3.3 & UP
+You can't use @extend within media queries
+anymore, so just be aware that if you drop
+them in here, they won't work.
+*/
   /*********************
-  NAVIGATION STYLES
-  *********************/
+NAVIGATION STYLES
+*********************/
   /* .menu is clearfixed inside mixins.scss */
   .menu {
     /* end .menu ul */ }
@@ -2316,18 +2285,17 @@ tweeners.
       /* end current highlighters */ }
       .menu ul li {
         /*
-        plan your menus and drop-downs wisely.
-        */ }
+				plan your menus and drop-downs wisely.
+				*/ }
         .menu ul li a {
           /*
-          you can use hover styles here even though this size
-          has the possibility of being a mobile device.
-          */ }
-
+					you can use hover styles here even though this size
+					has the possibility of being a mobile device.
+					*/ }
   /* end .menu */
   /*********************
-  POSTS & CONTENT STYLES
-  *********************/
+POSTS & CONTENT STYLES
+*********************/
   /* entry content */
   .entry-content {
     /* at this larger size, we can start to align images */ }
@@ -2344,25 +2312,23 @@ tweeners.
       margin-left: auto;
       display: block;
       clear: both; }
-
   /* end .entry-content */
   .farm {
     width: 85%;
     margin: 0 auto;
     margin-top: 40px; }
-
   .farmer_profile {
     text-align: center;
     float: left; }
-
   /*********************
-  FOOTER STYLES
-  *********************/
+FOOTER STYLES
+*********************/
   /*
-  check your menus here. do they look good?
-  do they need tweaking?
-  */
+check your menus here. do they look good?
+do they need tweaking?
+*/
   /* end .footer-links */ }
+
 /*********************
 TABLET & SMALLER LAPTOPS
 This is the average viewing window. So Desktops, Laptops, and
@@ -2371,21 +2337,21 @@ you can add resource intensive styles.
 *********************/
 @media only screen and (min-width: 768px) {
   /******************************************************************
-  Site Name:
-  Author:
-  
-  Stylesheet: Tablet & Small Desktop Stylesheet
-  
-  Here's where you can start getting into the good stuff.
-  This size will work on iPads, other tablets, and desktops.
-  So you can start working with more styles, background images,
-  and other resources. You'll also notice the grid starts to
-  come into play. Have fun!
-  
-  ******************************************************************/
+Site Name:
+Author:
+
+Stylesheet: Tablet & Small Desktop Stylesheet
+
+Here's where you can start getting into the good stuff.
+This size will work on iPads, other tablets, and desktops.
+So you can start working with more styles, background images,
+and other resources. You'll also notice the grid starts to
+come into play. Have fun!
+
+******************************************************************/
   /*********************
-  GENERAL STYLES
-  *********************/
+GENERAL STYLES
+*********************/
   .woodgrain {
     background-image: url("../images/wood-stripe.jpg");
     background-position: center;
@@ -2394,7 +2360,8 @@ you can add resource intensive styles.
     position: relative;
     width: 100%;
     z-index: 1;
-    box-shadow: 1px 2px 4px 1px rgba(0, 0, 0, 0.5); }
+    -webkit-box-shadow: 1px 2px 4px 1px rgba(0, 0, 0, 0.5);
+            box-shadow: 1px 2px 4px 1px rgba(0, 0, 0, 0.5); }
     .woodgrain .social-icons {
       text-align: right;
       margin: 0 auto;
@@ -2409,36 +2376,27 @@ you can add resource intensive styles.
       .woodgrain .social-icons a:active {
         opacity: 0.9;
         font-size: 0.9em; }
-
   .mobile_hide {
     display: inline-block; }
-
   .mobile_show {
     display: none; }
-
   .landing-page_header-info {
     display: block !important; }
-
   /*********************
-  LAYOUT & GRID STYLES
-  *********************/
+LAYOUT & GRID STYLES
+*********************/
   .our-people-container {
     margin: 0 auto;
     max-width: 896px;
     margin-right: -2px; }
-
   .emodal.medium {
     max-width: 845px; }
-
   .wrap {
     width: 760px; }
-
   .landing-page {
     height: 615px; }
-
   .page-header .page-title {
     font-size: 4em; }
-
   #section-one {
     max-width: 1280px;
     background-image: url("../images/mascot.png");
@@ -2452,7 +2410,6 @@ you can add resource intensive styles.
       max-width: 900px;
       padding-right: 450px;
       margin: auto; }
-
   #section-three {
     min-height: 450px; }
     #section-three .section-three-columns {
@@ -2465,7 +2422,6 @@ you can add resource intensive styles.
       float: left;
       text-align: left;
       width: 33%; }
-
   #section-four {
     padding-top: 25px; }
     #section-four .founder_headshot img {
@@ -2476,17 +2432,13 @@ you can add resource intensive styles.
     #section-four .founder_title {
       display: inline-block;
       font-size: 2.3em; }
-
   #inner-content {
     max-width: 915px;
     margin: 0 auto; }
-
   #content {
     background-image: url("../images/paper-background.jpg"); }
-
   #content.front-page {
     background-image: url("../images/paper-background-none.jpg"); }
-
   .content-group {
     background-position-y: 20px;
     background-repeat: no-repeat;
@@ -2495,11 +2447,9 @@ you can add resource intensive styles.
     margin-top: -165px;
     position: relative;
     z-index: 2; }
-
   .store_slider {
     height: 360px;
     overflow: hidden; }
-
   .bottom_border {
     height: 10px;
     border-bottom: 1px solid #323944;
@@ -2507,21 +2457,18 @@ you can add resource intensive styles.
     margin: 0 auto;
     margin-top: 30px;
     margin-bottom: 45px; }
-
   .additional_image {
     max-height: 345px;
     overflow: hidden; }
-
   .our-people-modal-content .content {
     width: 70%;
     float: left;
     padding-bottom: 15px; }
   .our-people-modal-content .contact {
     float: right; }
-
   /*********************
-  HEADER STYLES
-  *********************/
+HEADER STYLES
+*********************/
   .left-header-info {
     float: left;
     text-align: left;
@@ -2539,7 +2486,6 @@ you can add resource intensive styles.
       line-height: 25px;
       color: #323944;
       text-transform: none; }
-
   .right-header-info {
     float: right;
     border-radius: 100px;
@@ -2549,7 +2495,6 @@ you can add resource intensive styles.
     margin-top: -25px;
     margin-right: 20px;
     background-image: url("../images/30-days.png"); }
-
   .landing-page_header-info {
     top: 20%;
     height: 420px;
@@ -2557,8 +2502,8 @@ you can add resource intensive styles.
     background-color: #ffffff;
     border-radius: 10px;
     /*
-    background-image: url("../images/placeholder-home-new.png");
-    */
+	background-image: url("../images/placeholder-home-new.png");
+	*/
     position: relative;
     background-repeat: no-repeat;
     margin: 0 auto;
@@ -2598,24 +2543,20 @@ you can add resource intensive styles.
       text-align: right;
       line-height: 1;
       padding-top: 10px; }
-
   .header #mobile-menu {
     display: none; }
   .header #menu-main-menu {
     display: inline-block !important;
     margin-right: -10px; }
-
   .page-header {
     height: 330px; }
-
   .tt-logo {
     width: 145px;
     height: 120px;
     top: 41px; }
-
   /*********************
-  NAVIGATION STYLES
-  *********************/
+NAVIGATION STYLES
+*********************/
   .nav {
     border: 0;
     /* end .menu ul li */
@@ -2632,15 +2573,15 @@ you can add resource intensive styles.
       padding-left: 0px;
       margin-top: 0px;
       /*
-      plan your menus and drop-downs wisely.
-      */
+		plan your menus and drop-downs wisely.
+		*/
       /* showing sub-menus */ }
       .nav li a {
         border-bottom: 0;
         /*
-        you can use hover styles here even though this size
-        has the possibility of being a mobile device.
-        */ }
+			you can use hover styles here even though this size
+			has the possibility of being a mobile device.
+			*/ }
         .nav li a:hover, .nav li a:focus {
           color: #fff;
           text-decoration: underline; }
@@ -2656,10 +2597,10 @@ you can add resource intensive styles.
         .nav li ul.sub-menu li,
         .nav li ul.children li {
           /*
-          if you need to go deeper, go nuts
-          just remember deeper menus suck
-          for usability. k, bai.
-          */ }
+				if you need to go deeper, go nuts
+				just remember deeper menus suck
+				for usability. k, bai.
+				*/ }
           .nav li ul.sub-menu li a,
           .nav li ul.children li a {
             padding-left: 10px;
@@ -2677,18 +2618,15 @@ you can add resource intensive styles.
       .nav li:hover > ul {
         top: auto;
         visibility: visible; }
-
   /* end .nav */
   /*********************
-  SIDEBARS & ASIDES
-  *********************/
+SIDEBARS & ASIDES
+*********************/
   .sidebar {
     margin-top: 2.2em; }
-
   .widgettitle {
     border-bottom: 2px solid #444;
     margin-bottom: 0.75em; }
-
   .widget {
     padding: 0 10px;
     margin: 2.2em 0; }
@@ -2698,7 +2636,6 @@ you can add resource intensive styles.
       .widget ul li ul {
         margin-top: 0.75em;
         padding-left: 1em; }
-
   /* links widget */
   /* meta widget */
   /* pages widget */
@@ -2711,34 +2648,32 @@ you can add resource intensive styles.
   /* search widget */
   /* text widget */
   /*********************
-  FOOTER STYLES
-  *********************/
+FOOTER STYLES
+*********************/
   /*
-  you'll probably need to do quite a bit
-  of overriding here if you styled them for
-  mobile. Make sure to double check these!
-  */
+you'll probably need to do quite a bit
+of overriding here if you styled them for
+mobile. Make sure to double check these!
+*/
   #inner-footer .social-icons {
     float: right;
     clear: right;
     margin-top: 0px; }
-
   .footer-info {
     float: left;
     text-align: left !important;
     margin-top: -41px; }
-
   .footer-links {
     float: right;
     display: inline-block; }
     .footer-links ul li {
       /*
-      be careful with the depth of your menus.
-      it's very rare to have multi-depth menus in
-      the footer.
-      */ }
-
+			be careful with the depth of your menus.
+			it's very rare to have multi-depth menus in
+			the footer.
+			*/ }
   /* end .footer-links */ }
+
 /*********************
 DESKTOP
 This is the average viewing window. So Desktops, Laptops, and
@@ -2747,26 +2682,23 @@ you can add resource intensive styles.
 *********************/
 @media only screen and (min-width: 1030px) {
   /******************************************************************
-  Site Name:
-  Author:
-  
-  Stylesheet: Desktop Stylsheet
-  
-  This is the desktop size. It's larger than an iPad so it will only
-  be seen on the Desktop.
-  
-  ******************************************************************/
+Site Name:
+Author:
+
+Stylesheet: Desktop Stylsheet
+
+This is the desktop size. It's larger than an iPad so it will only
+be seen on the Desktop.
+
+******************************************************************/
   .wrap {
     width: 1040px; }
-
   .header-wrap {
     width: 1040px;
     margin: 0 auto; }
-
   #sidebar1 {
     display: block;
     max-width: 23%; }
-
   .content-group {
     background-image: url("../images/page-shadow.png");
     background-position-y: 20px;
@@ -2776,21 +2708,23 @@ you can add resource intensive styles.
     margin-top: -165px;
     position: relative;
     z-index: 2; } }
+
 /*********************
 LARGE VIEWING SIZE
 This is for the larger monitors and possibly full screen viewers.
 *********************/
 @media only screen and (min-width: 1240px) {
   /******************************************************************
-  Site Name: 
-  Author: 
-  
-  Stylesheet: Super Large Monitor Stylesheet
-  
-  You can add some advanced styles here if you like. This kicks in
-  on larger screens.
-  
-  ******************************************************************/ }
+Site Name: 
+Author: 
+
+Stylesheet: Super Large Monitor Stylesheet
+
+You can add some advanced styles here if you like. This kicks in
+on larger screens.
+
+******************************************************************/ }
+
 /*********************
 RETINA (2x RESOLUTION DEVICES)
 This applies to the retina iPhone (4s) and iPad (2,3) along with
@@ -2799,45 +2733,46 @@ query for retina AND a certain size if you want. Go Nuts.
 *********************/
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
   /******************************************************************
-  Site Name: 
-  Author: 
-  
-  Stylesheet: Retina Screens & Devices Stylesheet
-  
-  When handling retina screens you need to make adjustments, especially
-  if you're not using font icons. Here you can add them in one neat
-  place.
-  
-  ******************************************************************/
+Site Name: 
+Author: 
+
+Stylesheet: Retina Screens & Devices Stylesheet
+
+When handling retina screens you need to make adjustments, especially
+if you're not using font icons. Here you can add them in one neat
+place.
+
+******************************************************************/
   /* 
-  
-  EXAMPLE 
-  Let's say you have an image and you need to make sure it looks ok
-  on retina screens. Let's say we have an icon which dimension are
-  24px x 24px. In your regular stylesheets, it would look something
-  like this:
-  
-  .icon {
-  	width: 24px;
-  	height: 24px;
-  	background: url(img/test.png) no-repeat;
-  }
-  
-  For retina screens, we have to make some adjustments, so that image
-  doesn't look blurry. So, taking into account the image above and the
-  dimensions, this is what we would put in our retina stylesheet:
-  
-  .icon {
-  	background: url(img/test@2x.png) no-repeat;
-  	background-size: 24px 24px;
-  }
-  
-  So, you would create the same icon, but at double the resolution, meaning 
-  it would be 48px x 48px. You'd name it the same, but with a @2x at the end
-  (this is pretty standard practice). Set the background image so it matches
-  the original dimensions and you are good to go. 
-  
-  */ }
+
+EXAMPLE 
+Let's say you have an image and you need to make sure it looks ok
+on retina screens. Let's say we have an icon which dimension are
+24px x 24px. In your regular stylesheets, it would look something
+like this:
+
+.icon {
+	width: 24px;
+	height: 24px;
+	background: url(img/test.png) no-repeat;
+}
+
+For retina screens, we have to make some adjustments, so that image
+doesn't look blurry. So, taking into account the image above and the
+dimensions, this is what we would put in our retina stylesheet:
+
+.icon {
+	background: url(img/test@2x.png) no-repeat;
+	background-size: 24px 24px;
+}
+
+So, you would create the same icon, but at double the resolution, meaning 
+it would be 48px x 48px. You'd name it the same, but with a @2x at the end
+(this is pretty standard practice). Set the background image so it matches
+the original dimensions and you are good to go. 
+
+*/ }
+
 /*********************
 PRINT STYLESHEET
 Feel free to customize this. Remember to add things that won't make
@@ -2846,23 +2781,23 @@ be set to display none.
 *********************/
 @media print {
   /******************************************************************
-  Site Name:
-  Author:
-  
-  Stylesheet: Print Stylesheet
-  
-  This is the print stylesheet. There's probably not a lot
-  of reasons to edit this stylesheet. If you want to
-  though, go for it.
-  
-  ******************************************************************/
+Site Name:
+Author:
+
+Stylesheet: Print Stylesheet
+
+This is the print stylesheet. There's probably not a lot
+of reasons to edit this stylesheet. If you want to
+though, go for it.
+
+******************************************************************/
   * {
     background: transparent !important;
     color: black !important;
     text-shadow: none !important;
-    filter: none !important;
+    -webkit-filter: none !important;
+            filter: none !important;
     -ms-filter: none !important; }
-
   a, a:visited {
     color: #444 !important;
     text-decoration: underline; }
@@ -2870,40 +2805,30 @@ be set to display none.
       content: " (" attr(href) ")"; }
     a abbr[title]:after, a:visited abbr[title]:after {
       content: " (" attr(title) ")"; }
-
   .ir a:after,
   a[href^="javascript:"]:after,
   a[href^="#"]:after {
     content: ""; }
-
   pre, blockquote {
     border: 1px solid #999;
     page-break-inside: avoid; }
-
   thead {
     display: table-header-group; }
-
   tr, img {
     page-break-inside: avoid; }
-
   img {
     max-width: 100% !important; }
-
   @page {
     margin: 0.5cm; }
   p, h2, h3 {
     orphans: 3;
     widows: 3; }
-
   h2,
   h3 {
     page-break-after: avoid; }
-
   .sidebar,
   .page-navigation,
   .wp-prev-next,
   .respond-form,
   nav {
     display: none; } }
-
-/*# sourceMappingURL=style.css.map */
