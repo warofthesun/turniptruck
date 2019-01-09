@@ -32,7 +32,7 @@
 						$size = 'landing_blocks';
 						$thumb = $image['sizes'][ $size ];
 					?>
-					<div class="caption">Holiday<div class="small-caption">Options and Tips</div></div>
+					<div class="caption">go green in 2019<div class="small-caption">Tips and Recipes</div></div>
 					<img src="<?php echo $thumb; ?>">
 				</a>
 
