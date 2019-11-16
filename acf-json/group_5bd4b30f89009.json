@@ -1,0 +1,149 @@
+{
+    "key": "group_5bd4b30f89009",
+    "title": "Our Stores",
+    "fields": [
+        {
+            "key": "field_558f2a04fef92",
+            "label": "Header Slider",
+            "name": "header_slider",
+            "type": "wysiwyg",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "toolbar": "basic",
+            "media_upload": 0,
+            "tabs": "all",
+            "delay": 0
+        },
+        {
+            "key": "field_559094d6d541d",
+            "label": "Store Info",
+            "name": "store_info",
+            "type": "text",
+            "instructions": "Enter store name",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "formatting": "html",
+            "maxlength": ""
+        },
+        {
+            "key": "field_55e34a7e7479e",
+            "label": "Store Address",
+            "name": "store_address",
+            "type": "text",
+            "instructions": "Enter store address as 123 street | Nashville, TN ZIP",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "formatting": "html",
+            "maxlength": ""
+        },
+        {
+            "key": "field_55e34a977479f",
+            "label": "Store Address Link",
+            "name": "store_address_link",
+            "type": "text",
+            "instructions": "Past in link from Google Maps - note, you only need this part of the link - 1010+Street+Name,+City,+STATE+ZIP",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "formatting": "html",
+            "maxlength": ""
+        },
+        {
+            "key": "field_55e34aa2747a0",
+            "label": "Store Phone Number",
+            "name": "store_phone_number",
+            "type": "text",
+            "instructions": "Enter store phone number as (615) 890-1234",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "formatting": "html",
+            "maxlength": ""
+        },
+        {
+            "key": "field_55e34aab747a1",
+            "label": "Store Phone Number Link",
+            "name": "store_phone_number_link",
+            "type": "text",
+            "instructions": "Enter store phone number as 6158901234",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "formatting": "html",
+            "maxlength": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "our_stores"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "acf_after_title",
+    "style": "seamless",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [
+        "excerpt",
+        "discussion",
+        "featured_image",
+        "categories",
+        "tags"
+    ],
+    "active": 1,
+    "description": "",
+    "modified": 1573930722
+}
