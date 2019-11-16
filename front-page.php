@@ -21,7 +21,12 @@
 						<?php the_field('landing_page_content'); ?>
 					</div>
 				</div>
-				<a href="/<?php the_field('holiday_special_link'); ?>" class="blocks holiday bottom">
+					<?php
+						$link = get_field('holiday_special_link');
+				    $link_url = $link['url'];
+				    $link_target = $link['target'] ? $link['target'] : '_self';
+			    ?>
+			    <a class="blocks holiday bottom" href="<?php echo esc_url( $link_url ); ?>" target="<?php echo esc_attr( $link_target ); ?>">
 					<?php
 						$image = get_field('holiday_special');
 
@@ -32,11 +37,15 @@
 						$size = 'landing_blocks';
 						$thumb = $image['sizes'][ $size ];
 					?>
-					<div class="caption"><div class="small-caption">Pre-order your</div>Holiday Turkey Dinner!</div>
+					<div class="caption"><div class="small-caption"><?php the_field('holiday-caption-line-one');?></div><?php the_field('holiday-caption-line-two');?></div>
 					<img src="<?php echo $thumb; ?>">
 				</a>
-
-				<a href="/<?php the_field('whats_on_sale_link'); ?>" class="blocks top">
+				<?php
+					$link = get_field('whats_on_sale_link');
+					$link_url = $link['url'];
+					$link_target = $link['target'] ? $link['target'] : '_self';
+				?>
+				<a class="blocks top" href="<?php echo esc_url( $link_url ); ?>" target="<?php echo esc_attr( $link_target ); ?>">
 					<?php
 						$image = get_field('whats_on_sale');
 
@@ -47,14 +56,19 @@
 						$size = 'landing_blocks';
 						$thumb = $image['sizes'][ $size ];
 					?>
-					<div class="caption"><div class="small-caption">What's on</div>Sale?</div>
+					<div class="caption"><div class="small-caption"><?php the_field('sale-caption-line-one');?></div><?php the_field('sale-caption-line-two');?></div>
 					<img src="<?php echo $thumb; ?>">
 				</a>
 				<div class="blocks instagram top">
 					<div class="caption">Our<div class="small-caption">Instagram</div></div>
 					<?php echo do_shortcode ('[instagram-feed]'); ?>
 				</div>
-				<a href="/<?php the_field('weekly_menu_link'); ?>" class="blocks lunch bottom">
+				<?php
+					$link = get_field('weekly_menu_link');
+					$link_url = $link['url'];
+					$link_target = $link['target'] ? $link['target'] : '_self';
+				?>
+				<a class="blocks lunch bottom" href="<?php echo esc_url( $link_url ); ?>" target="<?php echo esc_attr( $link_target ); ?>">
 					<?php
 						$image = get_field('weekly_menu');
 
@@ -65,7 +79,7 @@
 						$size = 'landing_blocks';
 						$thumb = $image['sizes'][ $size ];
 					?>
-					<div class="caption"><div class="small-caption">What's</div>Cooking?</div>
+					<div class="caption"><div class="small-caption"><?php the_field('menu-caption-line-one');?></div><?php the_field('menu-caption-line-two');?></div>
 					<img src="<?php echo $thumb; ?>">
 				</a>
 			</div>

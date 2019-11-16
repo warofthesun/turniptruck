@@ -72,7 +72,7 @@
 						)); ?>
 
 					</nav>
-					
+
 				</div>
 				<?php $query = new WP_Query( 'pagename=landing-page' ); ?>
 				<?php
@@ -83,14 +83,14 @@
 							?>
 				<div class="woodgrain">
 					<div class="social-icons wrap">
-						<a href="https://www.facebook.com/<?php the_field('facebook_link'); ?>" target="_blank" class="starter-icons-facebook"></a>
-						<a href="https://twitter.com/<?php the_field('twitter_link'); ?>" target="_blank" class="starter-icons-twitter"></a>
-						<a href="https://instagram.com/<?php the_field('instagram_link'); ?>" target="_blank" class="starter-icons-instagram"></a>
+						<a href="https://www.facebook.com/<?php the_field('facebook_link', 'options'); ?>" target="_blank" class="starter-icons-facebook"></a>
+						<a href="https://twitter.com/<?php the_field('twitter_link', 'options'); ?>" target="_blank" class="starter-icons-twitter"></a>
+						<a href="https://instagram.com/<?php the_field('instagram_link', 'options'); ?>" target="_blank" class="starter-icons-instagram"></a>
 					</div>
 				</div>
 				<?php
-				
-					
+
+
 					}
 				}
 				/* Restore original Post Data */

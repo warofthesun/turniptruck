@@ -26,16 +26,16 @@
 								$query->the_post();
 								?>
 					<div class="social-icons">
-						<a href="https://facebook.com/<?php the_field('facebook_link'); ?>" target="_blank" class="starter-icons-facebook"></a>
-						<a href="https://twitter.com/<?php the_field('twitter_link'); ?>" target="_blank" class="starter-icons-twitter"></a>
-						<a href="https://instagram.com/<?php the_field('instagram_link'); ?>" target="_blank" class="starter-icons-instagram"></a><br>
+						<a href="https://facebook.com/<?php the_field('facebook_link', 'options'); ?>" target="_blank" class="starter-icons-facebook"></a>
+						<a href="https://twitter.com/<?php the_field('twitter_link', 'options'); ?>" target="_blank" class="starter-icons-twitter"></a>
+						<a href="https://instagram.com/<?php the_field('instagram_link', 'options'); ?>" target="_blank" class="starter-icons-instagram"></a><br>
 						<a href="http://theturniptruck.applicantpro.com/jobs/" target="_blank" class="apply">Apply for a Job</a>
 					</div>
 
 					<div class="footer-info">
 					<?php
-					
-						the_field('footer_info');
+
+						the_field('footer_info', 'options');
 						}
 					}
 					/* Restore original Post Data */
@@ -43,7 +43,7 @@
 					?>
 					<p class="source-org copyright">&copy; <?php echo date('Y'); ?> <?php bloginfo( 'name' ); ?>.</p>
 					</div>
-					
+
 
 				</div>
 
