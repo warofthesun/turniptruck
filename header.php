@@ -51,10 +51,26 @@
 
 					<?php // to use a image just replace the bloginfo('name') with your img src and remove the surrounding <p> ?>
 					<a href="<?php echo home_url(); ?>" rel="nofollow" class="tt-logo"><?php bloginfo('name'); ?></a>
-
+					<?php if(get_field('add_mercato_buttons', 'option') ) :
+						$field = get_field_object('color', 'option');
+						$value = $field['value'];
+					?>
+					<div class="mercato-badge">
+						<a href="https://www.mercato.com/shop/the-turnip-truck?utm_source=1257.The_Turnip_Truck&amp;utm_medium=shopnow" class="mercato-merchant-anchor" target="_blank"><img src="https://dye1fo42o13sl.cloudfront.net/buttons/store-marketing/201909_01/<?php the_field('delivery_or_online', 'option'); ?>-badge-<?php echo esc_attr($value); ?>@2x.png" onmouseover="this.src='https://dye1fo42o13sl.cloudfront.net/buttons/store-marketing/201909_01/<?php the_field('delivery_or_online', 'option'); ?>-badge-<?php echo esc_attr($value); ?>@2x.png'" onmouseout="this.src='https://dye1fo42o13sl.cloudfront.net/buttons/store-marketing/201909_01/<?php the_field('delivery_or_online', 'option'); ?>-badge-<?php echo esc_attr($value); ?>@2x.png'" alt="Shop Mercato.com" width="200" height="200"></a>
+					</div>
+					<?php endif; ?>
 					<?php // if you'd like to use the site description you can un-comment it below ?>
 					<?php // bloginfo('description'); ?>
-					<div class="mobile-nav"></div>
+					<div class="mobile-nav">
+						<?php if(get_field('add_mercato_buttons', 'option') ) :
+							$field = get_field_object('color', 'option');
+							$value = $field['value'];
+						?>
+							<div class="mercato-button_mobile">
+							<a href="https://www.mercato.com/shop/the-turnip-truck?utm_source=1257.The_Turnip_Truck&amp;utm_medium=shopnow" class="mercato-merchant-anchor" target="_blank"><img src="https://dye1fo42o13sl.cloudfront.net/buttons/store-marketing/201909_01/shop-now-<?php if( get_field('delivery_or_online' , 'option') == 'delivery' ) : ?>delivery-<?php endif; ?>btn-<?php echo esc_attr($value); ?>@2x.png" onmouseover="this.src='https://dye1fo42o13sl.cloudfront.net/buttons/store-marketing/201909_01/shop-now-<?php if( get_field('delivery_or_online' , 'option') == 'delivery' ) : ?>delivery-<?php endif; ?>btn-<?php echo esc_attr($value); ?>-hover@2x.png'" onmouseout="this.src='https://dye1fo42o13sl.cloudfront.net/buttons/store-marketing/201909_01/shop-now-<?php if( get_field('delivery_or_online' , 'option') == 'delivery' ) : ?>delivery-<?php endif; ?>btn-<?php echo esc_attr($value); ?>@2x.png'" alt="Shop Mercato.com" width="150" height="auto"></a>
+						</div>
+					<?php endif; ?>
+					</div>
 
 					<nav role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
 						<?php wp_nav_menu(array(
@@ -83,6 +99,14 @@
 							?>
 				<div class="woodgrain">
 					<div class="social-icons wrap">
+						<?php if(get_field('add_mercato_buttons', 'option') ) :
+							$field = get_field_object('color', 'option');
+							$value = $field['value'];
+						?>
+							<div class="mercato-button">
+								<a href="https://www.mercato.com/shop/the-turnip-truck?utm_source=1257.The_Turnip_Truck&amp;utm_medium=shopnow" class="mercato-merchant-anchor" target="_blank"><img src="https://dye1fo42o13sl.cloudfront.net/buttons/store-marketing/201909_01/shop-now-<?php if( get_field('delivery_or_online' , 'option') == 'delivery' ) : ?>delivery-<?php endif; ?>btn-<?php echo esc_attr($value); ?>@2x.png" onmouseover="this.src='https://dye1fo42o13sl.cloudfront.net/buttons/store-marketing/201909_01/shop-now-<?php if( get_field('delivery_or_online' , 'option') == 'delivery' ) : ?>delivery-<?php endif; ?>btn-<?php echo esc_attr($value); ?>-hover@2x.png'" onmouseout="this.src='https://dye1fo42o13sl.cloudfront.net/buttons/store-marketing/201909_01/shop-now-<?php if( get_field('delivery_or_online' , 'option') == 'delivery' ) : ?>delivery-<?php endif; ?>btn-<?php echo esc_attr($value); ?>@2x.png'" alt="Shop Mercato.com" width="150" height="auto"></a>
+							</div>
+						<?php endif; ?>
 						<a href="https://www.facebook.com/<?php the_field('facebook_link', 'options'); ?>" target="_blank" class="starter-icons-facebook"></a>
 						<a href="https://twitter.com/<?php the_field('twitter_link', 'options'); ?>" target="_blank" class="starter-icons-twitter"></a>
 						<a href="https://instagram.com/<?php the_field('instagram_link', 'options'); ?>" target="_blank" class="starter-icons-instagram"></a>

@@ -246,4 +246,12 @@ if( function_exists('acf_add_options_page') ) {
 	));
 }
 
+add_filter( 'body_class', 'custom_class' );
+function custom_class( $classes ) {
+    if ( is_page_template( 'front-page.php' ) ) {
+        $classes[] = 'example';
+    }
+    return $classes;
+}
+
 /* DON'T DELETE THIS CLOSING TAG */ ?>

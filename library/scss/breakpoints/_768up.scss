@@ -12,6 +12,29 @@ come into play. Have fun!
 
 ******************************************************************/
 
+.home {
+	.mercato-badge {
+		display: block;
+		position: absolute;
+		top: 180px;
+		margin-left: -35px;
+	}
+}
+
+.mercato-button_mobile {
+	display: none;
+}
+
+.home {
+	.mercato-button {
+		display: none;
+	}
+}
+
+
+.mercato-button {
+	display: inline-block;
+}
 
 /*********************
 GENERAL STYLES

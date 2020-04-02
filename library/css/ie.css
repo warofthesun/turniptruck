@@ -245,6 +245,9 @@ NAVIGATION STYLES
 /*********************
 POSTS & CONTENT STYLES
 *********************/
+.landing-page_header-info {
+  max-width: 534px; }
+
 /* entry content */
 .entry-content {
   /* at this larger size, we can start to align images */ }
@@ -293,6 +296,21 @@ and other resources. You'll also notice the grid starts to
 come into play. Have fun!
 
 ******************************************************************/
+.home .mercato-badge {
+  display: block;
+  position: absolute;
+  top: 180px;
+  margin-left: -35px; }
+
+.mercato-button_mobile {
+  display: none; }
+
+.home .mercato-button {
+  display: none; }
+
+.mercato-button {
+  display: inline-block; }
+
 /*********************
 GENERAL STYLES
 *********************/

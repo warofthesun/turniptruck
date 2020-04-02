@@ -15,7 +15,23 @@ and will be used across all viewports.
 GENERAL STYLES
 *********************/
 
+.mercato-badge {
+	display: none;
+}
 
+.mercato-button_mobile {
+	text-align: center;
+	top: 5px;
+	position: absolute;
+	margin: 0 auto;
+	left: 0;
+	right: 0;
+	z-index: 20;
+}
+
+.mercato-button {
+	display: none;
+}
 
 .blog-image {
 	img {
@@ -44,7 +60,7 @@ body {
 
 .landing-page_header-info {
 	top: 10%;
-	width: 534px;
+	width: 100%;
 	background-color: #ffffff;
 	border-radius: 10px;
 	position: relative;
@@ -311,6 +327,11 @@ HEADER STYLES
 		font-size: 1.5em;
 		color: $white;
 		padding-top: 6px;
+
+		.starter-icons-menu {
+			position: relative;
+			z-index: 30;
+		}
 	}
 
 	#menu-main-menu {

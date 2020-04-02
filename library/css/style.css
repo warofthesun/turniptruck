@@ -1255,6 +1255,21 @@ and will be used across all viewports.
 /*********************
 GENERAL STYLES
 *********************/
+.mercato-badge {
+  display: none; }
+
+.mercato-button_mobile {
+  text-align: center;
+  top: 5px;
+  position: absolute;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  z-index: 20; }
+
+.mercato-button {
+  display: none; }
+
 .blog-image img {
   width: 100%;
   height: auto; }
@@ -1276,7 +1291,7 @@ body {
 
 .landing-page_header-info {
   top: 10%;
-  width: 534px;
+  width: 100%;
   background-color: #ffffff;
   border-radius: 10px;
   position: relative;
@@ -1499,6 +1514,9 @@ HEADER STYLES
     font-size: 1.5em;
     color: #fff;
     padding-top: 6px; }
+    .header #mobile-menu .starter-icons-menu {
+      position: relative;
+      z-index: 30; }
   .header #menu-main-menu {
     display: none; }
   .header .social-icons {
@@ -2374,6 +2392,8 @@ NAVIGATION STYLES
   /*********************
 POSTS & CONTENT STYLES
 *********************/
+  .landing-page_header-info {
+    max-width: 534px; }
   /* entry content */
   .entry-content {
     /* at this larger size, we can start to align images */ }
@@ -2427,6 +2447,17 @@ and other resources. You'll also notice the grid starts to
 come into play. Have fun!
 
 ******************************************************************/
+  .home .mercato-badge {
+    display: block;
+    position: absolute;
+    top: 180px;
+    margin-left: -35px; }
+  .mercato-button_mobile {
+    display: none; }
+  .home .mercato-button {
+    display: none; }
+  .mercato-button {
+    display: inline-block; }
   /*********************
 GENERAL STYLES
 *********************/
