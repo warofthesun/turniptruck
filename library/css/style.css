@@ -1260,7 +1260,7 @@ GENERAL STYLES
 
 .mercato-button_mobile {
   text-align: center;
-  top: 5px;
+  top: 60px;
   position: absolute;
   margin: 0 auto;
   left: 0;
@@ -1718,6 +1718,8 @@ and more scalable.
   margin: 0;
   float: right;
   height: 41px;
+  position: relative;
+  z-index: 30;
   /* end .menu li */
   /* highlight current page */
   /* end current highlighters */ }
