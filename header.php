@@ -56,7 +56,18 @@
 						$value = $field['value'];
 					?>
 					<div class="mercato-badge">
+						<?php
+							$link = get_field('alternate_link', 'option');
+							if( $link ):
+							    $link_url = $link['url'];
+							    $link_title = $link['title'];
+							    $link_target = $link['target'] ? $link['target'] : '_self';
+							    ?>
+									<a href="<?php echo esc_url( $link_url ); ?>" class="mercato-merchant-anchor" target="<?php echo esc_attr( $link_target ); ?>"><img src="https://dye1fo42o13sl.cloudfront.net/buttons/store-marketing/201909_01/<?php the_field('delivery_or_online', 'option'); ?>-badge-<?php echo esc_attr($value); ?>@2x.png" onmouseover="this.src='https://dye1fo42o13sl.cloudfront.net/buttons/store-marketing/201909_01/<?php the_field('delivery_or_online', 'option'); ?>-badge-<?php echo esc_attr($value); ?>@2x.png'" onmouseout="this.src='https://dye1fo42o13sl.cloudfront.net/buttons/store-marketing/201909_01/<?php the_field('delivery_or_online', 'option'); ?>-badge-<?php echo esc_attr($value); ?>@2x.png'" alt="Shop Mercato.com" width="200" height="200"></a>
+							    </a>
+						<?php else : ?>
 						<a href="https://www.mercato.com/shop/the-turnip-truck?utm_source=1257.The_Turnip_Truck&amp;utm_medium=shopnow" class="mercato-merchant-anchor" target="_blank"><img src="https://dye1fo42o13sl.cloudfront.net/buttons/store-marketing/201909_01/<?php the_field('delivery_or_online', 'option'); ?>-badge-<?php echo esc_attr($value); ?>@2x.png" onmouseover="this.src='https://dye1fo42o13sl.cloudfront.net/buttons/store-marketing/201909_01/<?php the_field('delivery_or_online', 'option'); ?>-badge-<?php echo esc_attr($value); ?>@2x.png'" onmouseout="this.src='https://dye1fo42o13sl.cloudfront.net/buttons/store-marketing/201909_01/<?php the_field('delivery_or_online', 'option'); ?>-badge-<?php echo esc_attr($value); ?>@2x.png'" alt="Shop Mercato.com" width="200" height="200"></a>
+						<?php endif; ?>
 					</div>
 					<?php endif; ?>
 					<?php // if you'd like to use the site description you can un-comment it below ?>
@@ -67,7 +78,17 @@
 							$value = $field['value'];
 						?>
 							<div class="mercato-button_mobile">
+								<?php
+									$link = get_field('alternate_link', 'option');
+									if( $link ):
+									    $link_url = $link['url'];
+									    $link_title = $link['title'];
+									    $link_target = $link['target'] ? $link['target'] : '_self';
+									    ?>
+											<a href="<?php echo esc_url( $link_url ); ?>" class="mercato-merchant-anchor" target="<?php echo esc_attr( $link_target ); ?>"><img src="https://dye1fo42o13sl.cloudfront.net/buttons/store-marketing/201909_01/shop-now-<?php if( get_field('delivery_or_online' , 'option') == 'delivery' ) : ?>delivery-<?php endif; ?>btn-<?php echo esc_attr($value); ?>@2x.png" onmouseover="this.src='https://dye1fo42o13sl.cloudfront.net/buttons/store-marketing/201909_01/shop-now-<?php if( get_field('delivery_or_online' , 'option') == 'delivery' ) : ?>delivery-<?php endif; ?>btn-<?php echo esc_attr($value); ?>-hover@2x.png'" onmouseout="this.src='https://dye1fo42o13sl.cloudfront.net/buttons/store-marketing/201909_01/shop-now-<?php if( get_field('delivery_or_online' , 'option') == 'delivery' ) : ?>delivery-<?php endif; ?>btn-<?php echo esc_attr($value); ?>@2x.png'" alt="Shop Mercato.com" width="210" height="auto"></a>
+								<?php else : ?>
 							<a href="https://www.mercato.com/shop/the-turnip-truck?utm_source=1257.The_Turnip_Truck&amp;utm_medium=shopnow" class="mercato-merchant-anchor" target="_blank"><img src="https://dye1fo42o13sl.cloudfront.net/buttons/store-marketing/201909_01/shop-now-<?php if( get_field('delivery_or_online' , 'option') == 'delivery' ) : ?>delivery-<?php endif; ?>btn-<?php echo esc_attr($value); ?>@2x.png" onmouseover="this.src='https://dye1fo42o13sl.cloudfront.net/buttons/store-marketing/201909_01/shop-now-<?php if( get_field('delivery_or_online' , 'option') == 'delivery' ) : ?>delivery-<?php endif; ?>btn-<?php echo esc_attr($value); ?>-hover@2x.png'" onmouseout="this.src='https://dye1fo42o13sl.cloudfront.net/buttons/store-marketing/201909_01/shop-now-<?php if( get_field('delivery_or_online' , 'option') == 'delivery' ) : ?>delivery-<?php endif; ?>btn-<?php echo esc_attr($value); ?>@2x.png'" alt="Shop Mercato.com" width="210" height="auto"></a>
+							<?php endif; ?>
 						</div>
 					<?php endif; ?>
 					</div>
@@ -104,9 +125,21 @@
 							$value = $field['value'];
 						?>
 							<div class="mercato-button">
+								<?php
+									$link = get_field('alternate_link', 'option');
+									if( $link ):
+									    $link_url = $link['url'];
+									    $link_title = $link['title'];
+									    $link_target = $link['target'] ? $link['target'] : '_self';
+									    ?>
+											<a href="<?php echo esc_url( $link_url ); ?>" class="mercato-merchant-anchor" target="<?php echo esc_attr( $link_target ); ?>"><img src="https://dye1fo42o13sl.cloudfront.net/buttons/store-marketing/201909_01/shop-now-<?php if( get_field('delivery_or_online' , 'option') == 'delivery' ) : ?>delivery-<?php endif; ?>btn-<?php echo esc_attr($value); ?>@2x.png" onmouseover="this.src='https://dye1fo42o13sl.cloudfront.net/buttons/store-marketing/201909_01/shop-now-<?php if( get_field('delivery_or_online' , 'option') == 'delivery' ) : ?>delivery-<?php endif; ?>btn-<?php echo esc_attr($value); ?>-hover@2x.png'" onmouseout="this.src='https://dye1fo42o13sl.cloudfront.net/buttons/store-marketing/201909_01/shop-now-<?php if( get_field('delivery_or_online' , 'option') == 'delivery' ) : ?>delivery-<?php endif; ?>btn-<?php echo esc_attr($value); ?>@2x.png'" alt="Shop Mercato.com" width="150" height="auto"></a>
+								<?php else : ?>
 								<a href="https://www.mercato.com/shop/the-turnip-truck?utm_source=1257.The_Turnip_Truck&amp;utm_medium=shopnow" class="mercato-merchant-anchor" target="_blank"><img src="https://dye1fo42o13sl.cloudfront.net/buttons/store-marketing/201909_01/shop-now-<?php if( get_field('delivery_or_online' , 'option') == 'delivery' ) : ?>delivery-<?php endif; ?>btn-<?php echo esc_attr($value); ?>@2x.png" onmouseover="this.src='https://dye1fo42o13sl.cloudfront.net/buttons/store-marketing/201909_01/shop-now-<?php if( get_field('delivery_or_online' , 'option') == 'delivery' ) : ?>delivery-<?php endif; ?>btn-<?php echo esc_attr($value); ?>-hover@2x.png'" onmouseout="this.src='https://dye1fo42o13sl.cloudfront.net/buttons/store-marketing/201909_01/shop-now-<?php if( get_field('delivery_or_online' , 'option') == 'delivery' ) : ?>delivery-<?php endif; ?>btn-<?php echo esc_attr($value); ?>@2x.png'" alt="Shop Mercato.com" width="150" height="auto"></a>
+								<?php endif; ?>
 							</div>
 						<?php endif; ?>
+
+
 						<a href="https://www.facebook.com/<?php the_field('facebook_link', 'options'); ?>" target="_blank" class="starter-icons-facebook"></a>
 						<a href="https://twitter.com/<?php the_field('twitter_link', 'options'); ?>" target="_blank" class="starter-icons-twitter"></a>
 						<a href="https://instagram.com/<?php the_field('instagram_link', 'options'); ?>" target="_blank" class="starter-icons-instagram"></a>

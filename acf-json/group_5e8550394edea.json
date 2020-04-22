@@ -85,6 +85,21 @@
             "default_value": "",
             "layout": "horizontal",
             "return_format": "value"
+        },
+        {
+            "key": "field_5e9fa442de76a",
+            "label": "Alternate Link",
+            "name": "alternate_link",
+            "type": "link",
+            "instructions": "If used this will override the default link to the Mercato site.",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array"
         }
     ],
     "location": [
@@ -104,5 +119,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1585796961
+    "modified": 1587520858
 }
