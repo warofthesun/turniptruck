@@ -302,6 +302,15 @@ come into play. Have fun!
   top: 180px;
   margin-left: -35px; }
 
+.home .alternate-mercato-badge_home img {
+  max-width: 200px;
+  height: auto;
+  -webkit-transition: all .3s;
+  transition: all .3s; }
+
+.home .alternate-mercato-badge_home:hover img {
+  opacity: 0.9; }
+
 .mercato-button_mobile {
   display: none; }
 
@@ -310,6 +319,12 @@ come into play. Have fun!
 
 .mercato-button {
   display: inline-block; }
+  .mercato-button .mercato-merchant-anchor img {
+    max-height: 35px;
+    width: auto; }
+  .mercato-button .alternate-mercato-badge_header img {
+    max-height: 35px;
+    width: auto; }
 
 /*********************
 GENERAL STYLES

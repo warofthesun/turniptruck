@@ -57,14 +57,29 @@
 					?>
 					<div class="mercato-badge">
 						<?php
+							$homepage_badge = get_field('homepage_badge', 'option');
 							$link = get_field('alternate_link', 'option');
-							if( $link ):
-							    $link_url = $link['url'];
-							    $link_title = $link['title'];
-							    $link_target = $link['target'] ? $link['target'] : '_self';
-							    ?>
-									<a href="<?php echo esc_url( $link_url ); ?>" class="mercato-merchant-anchor" target="<?php echo esc_attr( $link_target ); ?>"><img src="https://dye1fo42o13sl.cloudfront.net/buttons/store-marketing/201909_01/<?php the_field('delivery_or_online', 'option'); ?>-badge-<?php echo esc_attr($value); ?>@2x.png" onmouseover="this.src='https://dye1fo42o13sl.cloudfront.net/buttons/store-marketing/201909_01/<?php the_field('delivery_or_online', 'option'); ?>-badge-<?php echo esc_attr($value); ?>@2x.png'" onmouseout="this.src='https://dye1fo42o13sl.cloudfront.net/buttons/store-marketing/201909_01/<?php the_field('delivery_or_online', 'option'); ?>-badge-<?php echo esc_attr($value); ?>@2x.png'" alt="Shop Mercato.com" width="200" height="200"></a>
-							    </a>
+							$link_url = $link['url'];
+							$link_title = $link['title'];
+							$link_target = $link['target'] ? $link['target'] : '_self';
+							if( !empty($homepage_badge) ):
+								$url = $homepage_badge['url'];
+								$title = $homepage_badge['title'];
+								$alt = $homepage_badge['alt'];
+								$caption = $homepage_badge['caption'];
+
+								// thumbnail
+								$size = 'large';
+								$thumb = $homepage_badge['sizes'][ $size ];
+								$width = $homepage_badge['sizes'][ $size . '-width' ];
+								$height = $homepage_badge['sizes'][ $size . '-height' ]; ?>
+								<a href="<?php echo esc_url( $link_url ); ?>" title="<?php echo $link_title; ?>" class="alternate-mercato-badge_home">
+							  	<img src="<?php echo $thumb; ?>" alt="<?php echo $alt; ?>" width="<?php echo $width; ?>" height="<?php echo $height; ?>" />
+							  </a>
+
+							<?php elseif( $link ): ?>
+								<a href="<?php echo esc_url( $link_url ); ?>" class="mercato-merchant-anchor" target="<?php echo esc_attr( $link_target ); ?>"><img src="https://dye1fo42o13sl.cloudfront.net/buttons/store-marketing/201909_01/<?php the_field('delivery_or_online', 'option'); ?>-badge-<?php echo esc_attr($value); ?>@2x.png" onmouseover="this.src='https://dye1fo42o13sl.cloudfront.net/buttons/store-marketing/201909_01/<?php the_field('delivery_or_online', 'option'); ?>-badge-<?php echo esc_attr($value); ?>@2x.png'" onmouseout="this.src='https://dye1fo42o13sl.cloudfront.net/buttons/store-marketing/201909_01/<?php the_field('delivery_or_online', 'option'); ?>-badge-<?php echo esc_attr($value); ?>@2x.png'" alt="Shop Mercato.com" width="200" height="200"></a>
+						    </a>
 						<?php else : ?>
 						<a href="https://www.mercato.com/shop/the-turnip-truck?utm_source=1257.The_Turnip_Truck&amp;utm_medium=shopnow" class="mercato-merchant-anchor" target="_blank"><img src="https://dye1fo42o13sl.cloudfront.net/buttons/store-marketing/201909_01/<?php the_field('delivery_or_online', 'option'); ?>-badge-<?php echo esc_attr($value); ?>@2x.png" onmouseover="this.src='https://dye1fo42o13sl.cloudfront.net/buttons/store-marketing/201909_01/<?php the_field('delivery_or_online', 'option'); ?>-badge-<?php echo esc_attr($value); ?>@2x.png'" onmouseout="this.src='https://dye1fo42o13sl.cloudfront.net/buttons/store-marketing/201909_01/<?php the_field('delivery_or_online', 'option'); ?>-badge-<?php echo esc_attr($value); ?>@2x.png'" alt="Shop Mercato.com" width="200" height="200"></a>
 						<?php endif; ?>
@@ -79,12 +94,27 @@
 						?>
 							<div class="mercato-button_mobile">
 								<?php
+									$header_badge = get_field('header_badge', 'option');
 									$link = get_field('alternate_link', 'option');
-									if( $link ):
-									    $link_url = $link['url'];
-									    $link_title = $link['title'];
-									    $link_target = $link['target'] ? $link['target'] : '_self';
-									    ?>
+									$link_url = $link['url'];
+									$link_title = $link['title'];
+									$link_target = $link['target'] ? $link['target'] : '_self';
+									if( !empty($header_badge) ):
+										$url = $header_badge['url'];
+										$title = $header_badge['title'];
+										$alt = $header_badge['alt'];
+										$caption = $header_badge['caption'];
+
+										// thumbnail
+										$size = 'large';
+										$thumb = $header_badge['sizes'][ $size ];
+										$width = $header_badge['sizes'][ $size . '-width' ];
+										$height = $header_badge['sizes'][ $size . '-height' ]; ?>
+										<a href="<?php echo esc_url( $link_url ); ?>" title="<?php echo $link_title; ?>" class="alternate-mercato-badge_mobile">
+									  	<img src="<?php echo $thumb; ?>" alt="<?php echo $alt; ?>" width="<?php echo $width; ?>" height="<?php echo $height; ?>" />
+									  </a>
+
+									<?php elseif( $link ): ?>
 											<a href="<?php echo esc_url( $link_url ); ?>" class="mercato-merchant-anchor" target="<?php echo esc_attr( $link_target ); ?>"><img src="https://dye1fo42o13sl.cloudfront.net/buttons/store-marketing/201909_01/shop-now-<?php if( get_field('delivery_or_online' , 'option') == 'delivery' ) : ?>delivery-<?php endif; ?>btn-<?php echo esc_attr($value); ?>@2x.png" onmouseover="this.src='https://dye1fo42o13sl.cloudfront.net/buttons/store-marketing/201909_01/shop-now-<?php if( get_field('delivery_or_online' , 'option') == 'delivery' ) : ?>delivery-<?php endif; ?>btn-<?php echo esc_attr($value); ?>-hover@2x.png'" onmouseout="this.src='https://dye1fo42o13sl.cloudfront.net/buttons/store-marketing/201909_01/shop-now-<?php if( get_field('delivery_or_online' , 'option') == 'delivery' ) : ?>delivery-<?php endif; ?>btn-<?php echo esc_attr($value); ?>@2x.png'" alt="Shop Mercato.com" width="210" height="auto"></a>
 								<?php else : ?>
 							<a href="https://www.mercato.com/shop/the-turnip-truck?utm_source=1257.The_Turnip_Truck&amp;utm_medium=shopnow" class="mercato-merchant-anchor" target="_blank"><img src="https://dye1fo42o13sl.cloudfront.net/buttons/store-marketing/201909_01/shop-now-<?php if( get_field('delivery_or_online' , 'option') == 'delivery' ) : ?>delivery-<?php endif; ?>btn-<?php echo esc_attr($value); ?>@2x.png" onmouseover="this.src='https://dye1fo42o13sl.cloudfront.net/buttons/store-marketing/201909_01/shop-now-<?php if( get_field('delivery_or_online' , 'option') == 'delivery' ) : ?>delivery-<?php endif; ?>btn-<?php echo esc_attr($value); ?>-hover@2x.png'" onmouseout="this.src='https://dye1fo42o13sl.cloudfront.net/buttons/store-marketing/201909_01/shop-now-<?php if( get_field('delivery_or_online' , 'option') == 'delivery' ) : ?>delivery-<?php endif; ?>btn-<?php echo esc_attr($value); ?>@2x.png'" alt="Shop Mercato.com" width="210" height="auto"></a>
@@ -120,24 +150,39 @@
 							?>
 				<div class="woodgrain">
 					<div class="social-icons wrap">
-						<?php if(get_field('add_mercato_buttons', 'option') ) :
-							$field = get_field_object('color', 'option');
-							$value = $field['value'];
-						?>
-							<div class="mercato-button">
-								<?php
-									$link = get_field('alternate_link', 'option');
-									if( $link ):
-									    $link_url = $link['url'];
-									    $link_title = $link['title'];
-									    $link_target = $link['target'] ? $link['target'] : '_self';
-									    ?>
-											<a href="<?php echo esc_url( $link_url ); ?>" class="mercato-merchant-anchor" target="<?php echo esc_attr( $link_target ); ?>"><img src="https://dye1fo42o13sl.cloudfront.net/buttons/store-marketing/201909_01/shop-now-<?php if( get_field('delivery_or_online' , 'option') == 'delivery' ) : ?>delivery-<?php endif; ?>btn-<?php echo esc_attr($value); ?>@2x.png" onmouseover="this.src='https://dye1fo42o13sl.cloudfront.net/buttons/store-marketing/201909_01/shop-now-<?php if( get_field('delivery_or_online' , 'option') == 'delivery' ) : ?>delivery-<?php endif; ?>btn-<?php echo esc_attr($value); ?>-hover@2x.png'" onmouseout="this.src='https://dye1fo42o13sl.cloudfront.net/buttons/store-marketing/201909_01/shop-now-<?php if( get_field('delivery_or_online' , 'option') == 'delivery' ) : ?>delivery-<?php endif; ?>btn-<?php echo esc_attr($value); ?>@2x.png'" alt="Shop Mercato.com" width="150" height="auto"></a>
-								<?php else : ?>
-								<a href="https://www.mercato.com/shop/the-turnip-truck?utm_source=1257.The_Turnip_Truck&amp;utm_medium=shopnow" class="mercato-merchant-anchor" target="_blank"><img src="https://dye1fo42o13sl.cloudfront.net/buttons/store-marketing/201909_01/shop-now-<?php if( get_field('delivery_or_online' , 'option') == 'delivery' ) : ?>delivery-<?php endif; ?>btn-<?php echo esc_attr($value); ?>@2x.png" onmouseover="this.src='https://dye1fo42o13sl.cloudfront.net/buttons/store-marketing/201909_01/shop-now-<?php if( get_field('delivery_or_online' , 'option') == 'delivery' ) : ?>delivery-<?php endif; ?>btn-<?php echo esc_attr($value); ?>-hover@2x.png'" onmouseout="this.src='https://dye1fo42o13sl.cloudfront.net/buttons/store-marketing/201909_01/shop-now-<?php if( get_field('delivery_or_online' , 'option') == 'delivery' ) : ?>delivery-<?php endif; ?>btn-<?php echo esc_attr($value); ?>@2x.png'" alt="Shop Mercato.com" width="150" height="auto"></a>
-								<?php endif; ?>
-							</div>
-						<?php endif; ?>
+								<?php if(get_field('add_mercato_buttons', 'option') ) :
+									$field = get_field_object('color', 'option');
+									$value = $field['value'];
+								?>
+								<div class="mercato-button">
+									<?php
+										$header_badge = get_field('header_badge', 'option');
+										$link = get_field('alternate_link', 'option');
+										$link_url = $link['url'];
+										$link_title = $link['title'];
+										$link_target = $link['target'] ? $link['target'] : '_self';
+										if( !empty($header_badge) ):
+											$url = $header_badge['url'];
+											$title = $header_badge['title'];
+											$alt = $header_badge['alt'];
+											$caption = $header_badge['caption'];
+
+											// thumbnail
+											$size = 'large';
+											$thumb = $header_badge['sizes'][ $size ];
+											$width = $header_badge['sizes'][ $size . '-width' ];
+											$height = $header_badge['sizes'][ $size . '-height' ]; ?>
+											<a href="<?php echo esc_url( $link_url ); ?>" title="<?php echo $link_title; ?>" class="alternate-mercato-badge_header">
+										  	<img src="<?php echo $thumb; ?>" alt="<?php echo $alt; ?>" width="<?php echo $width; ?>" height="<?php echo $height; ?>" />
+										  </a>
+
+										<?php elseif( $link ): ?>
+												<a href="<?php echo esc_url( $link_url ); ?>" class="mercato-merchant-anchor" target="<?php echo esc_attr( $link_target ); ?>"><img src="https://dye1fo42o13sl.cloudfront.net/buttons/store-marketing/201909_01/shop-now-<?php if( get_field('delivery_or_online' , 'option') == 'delivery' ) : ?>delivery-<?php endif; ?>btn-<?php echo esc_attr($value); ?>@2x.png" onmouseover="this.src='https://dye1fo42o13sl.cloudfront.net/buttons/store-marketing/201909_01/shop-now-<?php if( get_field('delivery_or_online' , 'option') == 'delivery' ) : ?>delivery-<?php endif; ?>btn-<?php echo esc_attr($value); ?>-hover@2x.png'" onmouseout="this.src='https://dye1fo42o13sl.cloudfront.net/buttons/store-marketing/201909_01/shop-now-<?php if( get_field('delivery_or_online' , 'option') == 'delivery' ) : ?>delivery-<?php endif; ?>btn-<?php echo esc_attr($value); ?>@2x.png'" alt="Shop Mercato.com" width="210" height="auto"></a>
+									<?php else : ?>
+									<a href="https://www.mercato.com/shop/the-turnip-truck?utm_source=1257.The_Turnip_Truck&amp;utm_medium=shopnow" class="mercato-merchant-anchor" target="_blank"><img src="https://dye1fo42o13sl.cloudfront.net/buttons/store-marketing/201909_01/shop-now-<?php if( get_field('delivery_or_online' , 'option') == 'delivery' ) : ?>delivery-<?php endif; ?>btn-<?php echo esc_attr($value); ?>@2x.png" onmouseover="this.src='https://dye1fo42o13sl.cloudfront.net/buttons/store-marketing/201909_01/shop-now-<?php if( get_field('delivery_or_online' , 'option') == 'delivery' ) : ?>delivery-<?php endif; ?>btn-<?php echo esc_attr($value); ?>-hover@2x.png'" onmouseout="this.src='https://dye1fo42o13sl.cloudfront.net/buttons/store-marketing/201909_01/shop-now-<?php if( get_field('delivery_or_online' , 'option') == 'delivery' ) : ?>delivery-<?php endif; ?>btn-<?php echo esc_attr($value); ?>@2x.png'" alt="Shop Mercato.com" width="150" height="auto"></a>
+									<?php endif; ?>
+								</div>
+							<?php endif; ?>
 
 
 						<a href="https://www.facebook.com/<?php the_field('facebook_link', 'options'); ?>" target="_blank" class="starter-icons-facebook"></a>

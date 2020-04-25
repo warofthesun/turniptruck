@@ -1,16 +1,3 @@
-/******************************************************************
-Site Name:
-Author:
-
-Stylesheet: Base Mobile Stylesheet
-
-Be light and don't over style since everything here will be
-loaded by mobile devices. You want to keep it as minimal as
-possible. This is called at the top of the main stylsheet
-and will be used across all viewports.
-
-******************************************************************/
-
 /*********************
 GENERAL STYLES
 *********************/
@@ -27,6 +14,13 @@ GENERAL STYLES
 	left: 0;
 	right: 0;
 	z-index: 20;
+}
+
+.alternate-mercato-badge_mobile {
+	img {
+		max-width: 200px;
+		height: auto;
+	}
 }
 
 .mercato-button {

@@ -1240,18 +1240,6 @@ This are the mobile styles. It's what people see on their phones. If
 you set a great foundation, you won't need to add too many styles in
 the other stylesheets. Remember, keep it light: Speed is Important.
 *********************/
-/******************************************************************
-Site Name:
-Author:
-
-Stylesheet: Base Mobile Stylesheet
-
-Be light and don't over style since everything here will be
-loaded by mobile devices. You want to keep it as minimal as
-possible. This is called at the top of the main stylsheet
-and will be used across all viewports.
-
-******************************************************************/
 /*********************
 GENERAL STYLES
 *********************/
@@ -1266,6 +1254,10 @@ GENERAL STYLES
   left: 0;
   right: 0;
   z-index: 20; }
+
+.alternate-mercato-badge_mobile img {
+  max-width: 200px;
+  height: auto; }
 
 .mercato-button {
   display: none; }
@@ -2454,12 +2446,25 @@ come into play. Have fun!
     position: absolute;
     top: 180px;
     margin-left: -35px; }
+  .home .alternate-mercato-badge_home img {
+    max-width: 200px;
+    height: auto;
+    -webkit-transition: all .3s;
+    transition: all .3s; }
+  .home .alternate-mercato-badge_home:hover img {
+    opacity: 0.9; }
   .mercato-button_mobile {
     display: none; }
   .home .mercato-button {
     display: none; }
   .mercato-button {
     display: inline-block; }
+    .mercato-button .mercato-merchant-anchor img {
+      max-height: 35px;
+      width: auto; }
+    .mercato-button .alternate-mercato-badge_header img {
+      max-height: 35px;
+      width: auto; }
   /*********************
 GENERAL STYLES
 *********************/

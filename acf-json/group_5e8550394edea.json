@@ -100,6 +100,54 @@
                 "id": ""
             },
             "return_format": "array"
+        },
+        {
+            "key": "field_5ea483727a996",
+            "label": "Homepage Badge",
+            "name": "homepage_badge",
+            "type": "image",
+            "instructions": "If used this will override the default Marcato homepage badge",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "preview_size": "medium",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
+        },
+        {
+            "key": "field_5ea4a6d400006",
+            "label": "Header Badge",
+            "name": "header_badge",
+            "type": "image",
+            "instructions": "If used this will override the default Marcato header badge",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "preview_size": "medium",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": ""
         }
     ],
     "location": [
@@ -119,5 +167,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1587520858
+    "modified": 1587848954
 }

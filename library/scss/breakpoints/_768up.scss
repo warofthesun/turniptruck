@@ -19,6 +19,20 @@ come into play. Have fun!
 		top: 180px;
 		margin-left: -35px;
 	}
+
+	.alternate-mercato-badge_home {
+		img {
+			max-width: 200px;
+			height: auto;
+			transition: all .3s;
+		}
+
+		&:hover {
+			img {
+				opacity: 0.9;
+			}
+		}
+	}
 }
 
 .mercato-button_mobile {
@@ -34,6 +48,20 @@ come into play. Have fun!
 
 .mercato-button {
 	display: inline-block;
+
+	.mercato-merchant-anchor {
+		img {
+			max-height: 35px;
+			width: auto;
+		}
+	}
+
+	.alternate-mercato-badge_header {
+		img {
+			max-height: 35px;
+			width: auto;
+		}
+	}
 }
 
 /*********************
