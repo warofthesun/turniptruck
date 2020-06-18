@@ -82,7 +82,32 @@
 					<div class="caption"><div class="small-caption"><?php the_field('menu-caption-line-one');?></div><?php the_field('menu-caption-line-two');?></div>
 					<img src="<?php echo $thumb; ?>">
 				</a>
+				<?php
+					$vote_now = get_field('vote_now_button', 'option');
+					$link = get_field('button_link', 'option');
+					$link_url = $link['url'];
+					$link_title = $link['title'];
+					$link_target = $link['target'] ? $link['target'] : '_self';
+					if( !empty($vote_now) ):
+						$url = $vote_now['url'];
+						$title = $vote_now['title'];
+						$alt = $vote_now['alt'];
+						$caption = $vote_now['caption'];
+
+						// thumbnail
+						$size = 'large';
+						$thumb = $vote_now['sizes'][ $size ];
+						$width = $vote_now['sizes'][ $size . '-width' ];
+						$height = $vote_now['sizes'][ $size . '-height' ]; ?>
+
+						<a href="<?php echo esc_url( $link_url ); ?>" title="<?php echo $link_title; ?>" class="vote-now">
+							<img src="<?php echo $thumb; ?>" alt="<?php echo $alt; ?>" width="<?php echo $width; ?>" height="<?php echo $height; ?>" />
+							<h4><?php echo $link_title; ?>"</h4>
+						</a>
 			</div>
+			<?php endif; ?>
+			</div>
+
 		</div>
 		<?php if (has_post_thumbnail( $query->ID ) ):
 			$image = wp_get_attachment_image_src( get_post_thumbnail_id( $query->ID ), 'atg-back' );

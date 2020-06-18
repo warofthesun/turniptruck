@@ -2,6 +2,43 @@
 GENERAL STYLES
 *********************/
 
+.mercato-button {
+	display: inline-block;
+	padding: 10px 25px;
+	background-color: #058342;
+	border-radius: 30px;
+	margin: 0 10px;
+	color: white !important;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 1.2em;
+	position: relative;
+	text-shadow: 1px 1px rgba(0,0,0,0.5);
+	box-shadow: 1px 1px 4px rgba(0,0,0,0.5);
+	transition: all .3s;
+}
+
+.mercato-button:before {
+	content: " ";
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  right: 5px;
+  bottom: 5px;
+  border: 1px solid #ffffff;
+	border-radius: 30px;
+	box-shadow: 0px 2px rgba(0,0,0,0.3);
+}
+
+.mercato-button:hover {
+	text-shadow: 0px 0px rgba(0,0,0,0.5);
+box-shadow: 0px 0px 0px rgba(0,0,0,0.5);
+}
+
+.mercato-button:hover:before {
+	box-shadow: 0px 0px rgba(0,0,0,0.3);
+}
+
 .mercato-badge {
 	display: none;
 }
@@ -24,6 +61,10 @@ GENERAL STYLES
 }
 
 .mercato-button {
+	display: none;
+}
+
+.vote-now {
 	display: none;
 }
 

@@ -326,6 +326,27 @@ come into play. Have fun!
     max-height: 35px;
     width: auto; }
 
+.vote-now {
+  display: block;
+  position: absolute;
+  right: -40%;
+  width: 150px;
+  text-decoration: none;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  opacity: 1; }
+  .vote-now:hover {
+    opacity: 0.8; }
+  .vote-now img {
+    width: 100%;
+    height: auto;
+    opacity: 1; }
+  .vote-now h4 {
+    color: #fff;
+    text-decoration: none;
+    margin-top: .5em;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.5); }
+
 /*********************
 GENERAL STYLES
 *********************/
