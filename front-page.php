@@ -102,7 +102,7 @@
 
 						<a href="<?php echo esc_url( $link_url ); ?>" title="<?php echo $link_title; ?>" class="vote-now">
 							<img src="<?php echo $thumb; ?>" alt="<?php echo $alt; ?>" width="<?php echo $width; ?>" height="<?php echo $height; ?>" />
-							<h4><?php echo $link_title; ?>"</h4>
+							<h4><?php echo $link_title; ?></h4>
 						</a>
 			</div>
 			<?php endif; ?>
