@@ -2,6 +2,15 @@
 GENERAL STYLES
 ********************/
 
+.header-buttons {
+	display: flex;
+	position: absolute;
+	flex-direction: column;
+	margin-top: 50px;
+	width: 100%;
+	text-align: center;
+}
+
 .mercato-badge {
 	display: none;
 }
@@ -9,10 +18,6 @@ GENERAL STYLES
 .mercato-button_mobile {
 	text-align: center;
 	top: 60px;
-	position: absolute;
-	margin: 0 auto;
-	left: 0;
-	right: 0;
 	z-index: 20;
 }
 
@@ -29,6 +34,29 @@ GENERAL STYLES
 
 .vote-now {
 	display: none;
+
+	h4 {
+		color: #00217a;
+		text-shadow: 1px 1px rgba(255,255,255, 0.8) !important;
+		text-decoration: none;
+	}
+}
+
+.vote-now_mobile {
+	display: flex;
+	justify-content: center;
+
+	.vote-now {
+		display: flex;
+		width: 50%;
+		justify-content: center;
+		text-decoration: none;
+
+		img {
+			width: 100px;
+			height: 100px;
+		}
+	}
 }
 
 .blog-image {
@@ -57,7 +85,7 @@ body {
 }
 
 .landing-page_header-info {
-	top: 10%;
+	top: 20%;
 	width: 100%;
 	background-color: #ffffff;
 	border-radius: 10px;

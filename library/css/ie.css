@@ -296,6 +296,9 @@ and other resources. You'll also notice the grid starts to
 come into play. Have fun!
 
 ******************************************************************/
+.header-buttons {
+  display: none; }
+
 .home .mercato-badge {
   display: block;
   position: absolute;
@@ -342,10 +345,8 @@ come into play. Have fun!
     height: auto;
     opacity: 1; }
   .vote-now h4 {
-    color: #fff;
     text-decoration: none;
-    margin-top: .5em;
-    text-shadow: 1px 1px rgba(0, 0, 0, 0.5); }
+    margin-top: .5em; }
 
 /*********************
 GENERAL STYLES
@@ -397,6 +398,8 @@ LAYOUT & GRID STYLES
 
 .landing-page {
   height: 615px; }
+  .landing-page_header-info {
+    top: 10%; }
 
 .page-header .page-title {
   font-size: 4em; }

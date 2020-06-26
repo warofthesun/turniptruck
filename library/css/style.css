@@ -1243,16 +1243,25 @@ the other stylesheets. Remember, keep it light: Speed is Important.
 /*********************
 GENERAL STYLES
 ********************/
+.header-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 50px;
+  width: 100%;
+  text-align: center; }
+
 .mercato-badge {
   display: none; }
 
 .mercato-button_mobile {
   text-align: center;
   top: 60px;
-  position: absolute;
-  margin: 0 auto;
-  left: 0;
-  right: 0;
   z-index: 20; }
 
 .alternate-mercato-badge_mobile img {
@@ -1264,6 +1273,30 @@ GENERAL STYLES
 
 .vote-now {
   display: none; }
+  .vote-now h4 {
+    color: #00217a;
+    text-shadow: 1px 1px rgba(255, 255, 255, 0.8) !important;
+    text-decoration: none; }
+
+.vote-now_mobile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  .vote-now_mobile .vote-now {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 50%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-decoration: none; }
+    .vote-now_mobile .vote-now img {
+      width: 100px;
+      height: 100px; }
 
 .blog-image img {
   width: 100%;
@@ -1285,7 +1318,7 @@ body {
   display: inline-block; }
 
 .landing-page_header-info {
-  top: 10%;
+  top: 20%;
   width: 100%;
   background-color: #ffffff;
   border-radius: 10px;
@@ -2444,6 +2477,8 @@ and other resources. You'll also notice the grid starts to
 come into play. Have fun!
 
 ******************************************************************/
+  .header-buttons {
+    display: none; }
   .home .mercato-badge {
     display: block;
     position: absolute;
@@ -2484,10 +2519,8 @@ come into play. Have fun!
       height: auto;
       opacity: 1; }
     .vote-now h4 {
-      color: #fff;
       text-decoration: none;
-      margin-top: .5em;
-      text-shadow: 1px 1px rgba(0, 0, 0, 0.5); }
+      margin-top: .5em; }
   /*********************
 GENERAL STYLES
 *********************/
@@ -2532,6 +2565,8 @@ LAYOUT & GRID STYLES
     width: 760px; }
   .landing-page {
     height: 615px; }
+    .landing-page_header-info {
+      top: 10%; }
   .page-header .page-title {
     font-size: 4em; }
   #section-one {

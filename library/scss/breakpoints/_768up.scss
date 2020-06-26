@@ -12,6 +12,10 @@ come into play. Have fun!
 
 ******************************************************************/
 
+.header-buttons {
+	display: none;
+}
+
 .home {
 	.mercato-badge {
 		display: block;
@@ -84,10 +88,8 @@ come into play. Have fun!
 	}
 
 	h4 {
-			color: $white;
 			text-decoration: none;
 			margin-top: .5em;
-			text-shadow: 1px 1px rgba(0,0,0,0.5);
 	}
 
 }
@@ -159,6 +161,10 @@ LAYOUT & GRID STYLES
 
 .landing-page {
 	height: 615px;
+
+	&_header-info {
+		top: 10%;
+	}
 }
 
 .page-header {
