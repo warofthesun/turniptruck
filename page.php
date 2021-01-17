@@ -24,6 +24,22 @@
 									<section class="entry-content cf" itemprop="articleBody">
 									<div class="page-headline"><?php the_field('page_headline'); ?></div>
 									<div class="page-subhead"><?php the_field('page_subhead'); ?></div>
+									<section class="entry-content cf" itemprop="articleBody">
+									
+										<div>
+											<?php
+										// the content (pretty self explanatory huh)
+										the_content();
+										?>
+										</div>
+										
+
+									<?php
+										endwhile; else : endif; 
+										wp_reset_postdata(); 
+									?>
+										
+									</section> <?php // end article section ?>
 										
 									</section> <?php // end article section ?>
 

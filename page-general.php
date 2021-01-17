@@ -41,6 +41,7 @@
 										// the content (pretty self explanatory huh)
 										the_content();
 										?>
+										</div>
 										
 
 									<?php
