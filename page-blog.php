@@ -1,9 +1,3 @@
-<?php
-/*
- Template Name: Blog
-*/
-?>
-
 <?php get_header(); ?>
 <!--PAGE-BLOG.PHP-->
 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>

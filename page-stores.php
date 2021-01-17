@@ -1,8 +1,3 @@
-<?php
-/*
-Template Name: Our Stores
-*/
-?>
 <?php get_header(); ?>
 <!--PAGE-OUR_STORES.PHP-->
 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>

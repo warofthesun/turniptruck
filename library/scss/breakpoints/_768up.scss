@@ -168,9 +168,13 @@ LAYOUT & GRID STYLES
 }
 
 .page-header {
+		height: 370px;
 
 	.page-title {
 		font-size: 4em;
+		line-height: 1em;
+		margin: 0 auto;
+		max-width: 800px;
 	}
 }
 
@@ -253,7 +257,7 @@ LAYOUT & GRID STYLES
 	background-repeat: no-repeat;
 	max-width: 994px;
 	margin: 0 auto;
-	margin-top: -165px;
+	margin-top: -120px;
 	position: relative;
 	z-index: 2;
 }
@@ -316,10 +320,6 @@ HEADER STYLES
 		display: inline-block !important;
 		margin-right: -10px;
 	}
-}
-
-.page-header {
-	height: 330px;
 }
 
 	.tt-logo {

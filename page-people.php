@@ -1,8 +1,3 @@
-<?php
-/*
-Template Name: Our People
-*/
-?>
 <?php get_header(); ?>
 <!--PAGE-OUR_PEOPLE.PHP-->
 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>

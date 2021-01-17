@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Our Farmers
+// Template 'Name': Our Farmers
 */
 ?>
 <?php get_header(); ?>

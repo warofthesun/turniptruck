@@ -546,15 +546,16 @@ HEADER STYLES
 .page-header {
 	height: 220px;
 	background-size: cover;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 
 	.page-title {
 		color: $colorfive;
 		text-transform: uppercase;
 		text-align: center;
-		padding-top: 80px;
 		text-shadow:1px 1px 1px black;
-
-
+		padding-bottom: 1em;
 	}
 
 	.blog {
