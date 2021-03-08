@@ -29,7 +29,7 @@
 						<a href="https://facebook.com/<?php the_field('facebook_link', 'options'); ?>" target="_blank" class="starter-icons-facebook"></a>
 						<a href="https://twitter.com/<?php the_field('twitter_link', 'options'); ?>" target="_blank" class="starter-icons-twitter"></a>
 						<a href="https://instagram.com/<?php the_field('instagram_link', 'options'); ?>" target="_blank" class="starter-icons-instagram"></a><br>
-						<a href="http://theturniptruck.applicantpro.com/jobs/" target="_blank" class="apply">Apply for a Job</a>
+						<a href="https://www.paycomonline.net/v4/ats/web.php/jobs?clientkey=6F2BAC13AABBBAAACD505EF77D9DA637" target="_blank" class="apply">Apply for a Job</a>
 					</div>
 
 					<div class="footer-info">
