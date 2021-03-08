@@ -522,6 +522,8 @@ NAVIGATION STYLES
 *********************/
 .nav {
   border: 0;
+  float: right;
+  height: auto;
   /* end .menu ul li */
   /* highlight current page */
   /* end current highlighters */ }
@@ -530,6 +532,7 @@ NAVIGATION STYLES
     margin-top: 0; }
   .nav li {
     float: left;
+    text-align: center;
     position: relative;
     background-color: transparent;
     margin-right: 0px;
@@ -541,6 +544,7 @@ NAVIGATION STYLES
     /* showing sub-menus */ }
     .nav li a {
       border-bottom: 0;
+      padding-bottom: 5px;
       /*
 			you can use hover styles here even though this size
 			has the possibility of being a mobile device.

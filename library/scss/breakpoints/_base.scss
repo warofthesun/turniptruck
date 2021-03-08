@@ -6,7 +6,7 @@ GENERAL STYLES
 	display: flex;
 	position: absolute;
 	flex-direction: column;
-	margin-top: 50px;
+	margin-top: 80px;
 	width: 100%;
 	text-align: center;
 }
@@ -85,13 +85,14 @@ body {
 }
 
 .landing-page_header-info {
-	top: 20%;
+	top: 125px;
 	width: 100%;
 	background-color: #ffffff;
 	border-radius: 10px;
 	position: relative;
 	background-repeat: no-repeat;
 	margin: 0 auto;
+	margin-bottom: 100px;
 	text-align: center;
 	background-position-x: 50%;
 	display: flex;
@@ -99,6 +100,7 @@ body {
 	flex-wrap: wrap;
 	justify-content: space-around;
 	padding: 1em;
+	
 
 	.left-header-info {
 		float: left;
@@ -123,7 +125,7 @@ body {
 
 	.blocks {
 		display: flex;
-		width: 48%;
+		width: 241px;
 		height: 241px;
 		overflow: hidden;
 		margin-top: 20px;
@@ -350,6 +352,7 @@ HEADER STYLES
 
 	#mobile-menu {
 		text-align: right;
+		padding-right: 10px;
 		font-size: 1.5em;
 		color: $white;
 		padding-top: 6px;
@@ -380,7 +383,7 @@ HEADER STYLES
 		position: absolute;
 		background-repeat: no-repeat;
 		z-index: 9999;
-		margin-left: -10px;
+		//margin-left: -10px;
 	}
 
 #section-one, #section-two, #section-three, #section-four {
@@ -621,19 +624,22 @@ and more scalable.
 .nav {
 	border-bottom: 0;
 	margin: 0;
-	float: right;
+	margin-top: -1px;
+	//float: right;
 	height: 41px;
 	position: relative;
 	z-index: 30;
+	background-color: $colorone;
+	height: 100%;
 
 	li {
 
-		text-align: right;
+		text-align: center;
 		position: relative;
 		z-index: 3;
-		background-color: $colorone;
-		margin-right: -10px;
-		padding-left: 60px;
+		
+		//margin-right: -10px;
+		//padding-left: 60px;
 		margin-top: -1px;
 
 		a {
@@ -843,7 +849,6 @@ POSTS & CONTENT STYLES
 }
 
 .landing-page {
-	height: 335px;
 	width: auto;
 	background-size: cover;
 	background-position-y: bottom;

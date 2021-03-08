@@ -1236,7 +1236,7 @@ GENERAL STYLES
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-top: 50px;
+  margin-top: 80px;
   width: 100%;
   text-align: center; }
 
@@ -1302,13 +1302,14 @@ body {
   display: inline-block; }
 
 .landing-page_header-info {
-  top: 20%;
+  top: 125px;
   width: 100%;
   background-color: #ffffff;
   border-radius: 10px;
   position: relative;
   background-repeat: no-repeat;
   margin: 0 auto;
+  margin-bottom: 100px;
   text-align: center;
   background-position-x: 50%;
   display: -webkit-box;
@@ -1344,7 +1345,7 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 48%;
+    width: 241px;
     height: 241px;
     overflow: hidden;
     margin-top: 20px;
@@ -1523,6 +1524,7 @@ HEADER STYLES
   height: 41px; }
   .header #mobile-menu {
     text-align: right;
+    padding-right: 10px;
     font-size: 1.5em;
     color: #fff;
     padding-top: 6px; }
@@ -1544,8 +1546,7 @@ HEADER STYLES
   float: left;
   position: absolute;
   background-repeat: no-repeat;
-  z-index: 9999;
-  margin-left: -10px; }
+  z-index: 9999; }
 
 #section-one, #section-two, #section-three, #section-four {
   position: relative;
@@ -1737,20 +1738,19 @@ and more scalable.
 .nav {
   border-bottom: 0;
   margin: 0;
-  float: right;
+  margin-top: -1px;
   height: 41px;
   position: relative;
   z-index: 30;
+  background-color: #644B78;
+  height: 100%;
   /* end .menu li */
   /* highlight current page */
   /* end current highlighters */ }
   .nav li {
-    text-align: right;
+    text-align: center;
     position: relative;
     z-index: 3;
-    background-color: #644B78;
-    margin-right: -10px;
-    padding-left: 60px;
     margin-top: -1px;
     /*
 		so you really have to rethink your dropdowns for mobile.
@@ -1900,7 +1900,6 @@ POSTS & CONTENT STYLES
   clear: left; }
 
 .landing-page {
-  height: 335px;
   width: auto;
   background-size: cover;
   background-position-y: bottom; }
@@ -2664,6 +2663,8 @@ NAVIGATION STYLES
 *********************/
   .nav {
     border: 0;
+    float: right;
+    height: auto;
     /* end .menu ul li */
     /* highlight current page */
     /* end current highlighters */ }
@@ -2672,6 +2673,7 @@ NAVIGATION STYLES
       margin-top: 0; }
     .nav li {
       float: left;
+      text-align: center;
       position: relative;
       background-color: transparent;
       margin-right: 0px;
@@ -2683,6 +2685,7 @@ NAVIGATION STYLES
       /* showing sub-menus */ }
       .nav li a {
         border-bottom: 0;
+        padding-bottom: 5px;
         /*
 			you can use hover styles here even though this size
 			has the possibility of being a mobile device.

@@ -125,7 +125,7 @@ jQuery(document).ready(function($) {
      $('.section-top').css('width',barWidth - 42 + 'px');
       */
      var windowHeight = $(window).height();
-     $('.landing-page').css('height',windowHeight + 'px');
+     $('.landing-page').css('min-height',windowHeight + 'px');
      /*
      $('#inner-content.why-light-therapy').css('min-height',windowHeight + 50 + 'px'); */
    }).resize();

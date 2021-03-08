@@ -334,12 +334,15 @@ NAVIGATION STYLES
 
 .nav {
 	border: 0;
+	float: right;
+	height: auto;
 	ul {
 		background:$black;
 		margin-top:0;
 	}
 	li {
 		float: left;
+		text-align: center;
 		position: relative;
 		background-color: transparent;
 		margin-right:  0px;
@@ -348,6 +351,7 @@ NAVIGATION STYLES
 
 		a {
 			border-bottom: 0;
+			padding-bottom: 5px;
 
 			/*
 			you can use hover styles here even though this size
